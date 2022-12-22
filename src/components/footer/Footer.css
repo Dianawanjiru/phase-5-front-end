@@ -1,10 +1,11 @@
 .footer{
     color: #fafafa;
     background-color: #FD9D17;
-    padding: 10px 10px 2px 10px;
+    padding: 10px 10px 20px 10px;
 }
 
 .footer .main-footer{
+    font-weight: 800;
     font-size: larger;
     color: #000;
     display: flex;
@@ -14,5 +15,6 @@
 
 .f-submenu{
     font-size: medium;
+    font-weight: 400;
 }
 
