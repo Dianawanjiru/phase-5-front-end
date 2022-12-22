@@ -20,6 +20,12 @@ function Navbar(){
                 </li>
                 <li>
                     <NavLink to='/services'>SERVICES</NavLink>
+                    <ul className='submenu'>
+                        <li>
+                            <NavLink to='/services/hire'>Hire</NavLink>
+                            <NavLink to='/services/appointment'>appointment</NavLink>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <NavLink to='/contacts'>CONTACT</NavLink>

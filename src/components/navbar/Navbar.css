@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+	padding-top: .9em;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #a2a2a2;
+	background-color: #000000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 9px;
+}
+
+.logo a{
+    color: #FD9D17;
+    font-weight: 300;
+    text-decoration: none;
+	font-size: 1.45em;
+    font-family: 'Faster One', cursive;
+}
+
+.main-nav {
+	margin-top: 5px;
+    color: #0e2338;
+	font-size: .99em;
+}
+
+.logo a,
+.main-nav a {
+    margin-top: 15px;
+	padding: 10px 18px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.main-nav a {
+    color: #fafafa;
+    font-family: 'Faster one';
+    font-weight: 500;
+    font-size: 1.7em;
+}
+
+.main-nav a:hover {
+	color: #FD9D17;
+    transform: translateY(-6px);
+    transition: 0.3s ease-out;
+}
+
+
+.btn-1{
+    color: #FD9D17;
+    font-size: large;
+    font-weight: 600;
+    background-color: green;
+    padding: 8px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.submenu{
+    font-size: small;
+    color: #fafafa;
+    background-color: #000000;
+    left: 100%;
+    top: 0;
+    width: 100px;
+    display: none;
+}
+
+.main-nav li:hover > .submenu{
+    width: 100px;
+    display: block;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    }
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
