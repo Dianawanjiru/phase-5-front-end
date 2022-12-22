@@ -2,6 +2,9 @@
     color: #fafafa;
     background-color: #FD9D17;
     padding: 10px 10px 20px 10px;
+    max-width:80%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 .footer .main-footer{
@@ -16,5 +19,15 @@
 .f-submenu{
     font-size: medium;
     font-weight: 400;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+    .footer .main-footer{
+        display: inline;
+        width: 10%;
+    }
 }
 
