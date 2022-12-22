@@ -6,10 +6,12 @@ import { NavLink } from 'react-router-dom';
 function Navbar(){
     return(
         <nav className='header'>
-            <h1>
-                CA.R.ENTAL
+            <h1 className='logo'>
+                <a href='/'>
+                    CA.R.ENTAL
+                </a>
             </h1>
-            <ul className='navbar'>
+            <ul className='main-nav'>
                 <li>
                     <NavLink to='/'>HOME</NavLink>
                 </li>
