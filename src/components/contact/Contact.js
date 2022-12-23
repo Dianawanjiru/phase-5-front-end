@@ -1,5 +1,6 @@
 import React from "react";
 import './Contact.css';
+import Footer from "../footer/Footer";
 
 
 const Contact = () => {
@@ -14,6 +15,7 @@ const Contact = () => {
                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                 </form>
             </div>
+            <Footer />
         </>
     )
 }
