@@ -31,7 +31,8 @@ function Navbar(){
                     <NavLink to='/contacts'>CONTACT</NavLink>
                 </li>
                 <li>
-                    <button>
+                    <button className='logout'>
+                        Log out
                     </button>
                 </li>
             </ul>

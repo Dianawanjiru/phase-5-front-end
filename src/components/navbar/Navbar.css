@@ -88,12 +88,20 @@ ul{
     display: block;
 }
 
+.logout{
+    padding: 6px;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    margin-left: 135px;
+    font-weight: 800;
+}
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 822px) {
 	.header,
 	.main-nav {
 		display: flex;
@@ -107,6 +115,14 @@ ul{
 		margin: 0 auto;
 		max-width: 1150px;
 	}
+    .logout{
+        padding: 6px;
+        background-color: orange;
+        border: none;
+        border-radius: 8px;
+        margin: 25px auto;
+    }
+
 }
 
 @media (min-width: 1025px) {
@@ -114,4 +130,11 @@ ul{
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
+    .logout{
+        padding: 6px;
+        background-color: orange;
+        border: none;
+        border-radius: 8px;
+        margin: 25px auto;
+    }
 }
