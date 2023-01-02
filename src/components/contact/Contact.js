@@ -1,17 +1,28 @@
 import React from "react";
+import { useState } from "react";
 import './Contact.css';
 import Footer from "../footer/Footer";
 
 
 const Contact = () => {
+
+    // const [message, setMessage] = useState('');
+
+    // const handleSubmit = event => {
+    //   // 👇️ prevent page refresh
+    //   event.preventDefault();
+  
+    //   alert('form submitted ✅');
+    // };
+
     return(
         <>
             <div className="contact-container">  
-                <form id="contact" action="" method="post">
+                <form id="contact" action="https://app.headlessforms.cloud/api/v1/form-submission/jwZ4BA5abQ" method="post">
                     <h3>Contact Us</h3>                    
-                    <input className='input1' placeholder="   NAME:" type="text"></input>
-                    <input className='input1' placeholder="   EMAIL:" type="email" tabindex="2" required></input>
-                    <input className='input2' placeholder="   TYPE YOUR MESSAGE:" tabindex="5" required></input>
+                    <input className='input1' placeholder="   NAME:" type="text" name="Name"  required="required"></input>
+                    <input className='input1' placeholder="   EMAIL:" type="email" name="Email" tabindex="2"  required="required"></input>
+                    <input className='input2' placeholder="   TYPE YOUR MESSAGE:" name="Message" tabindex="5"  required="required"></input>
                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                 </form>
             </div>
