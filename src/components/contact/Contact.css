@@ -50,6 +50,10 @@ input {
     font-weight: 600;
 }
 
+
+
+/* MEDIA QUERIES */
+
 @media (min-width: 820px){
 	#contact{
 		margin-bottom: 80%;
