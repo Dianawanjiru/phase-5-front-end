@@ -49,3 +49,14 @@ input {
 	font-size:20px;
     font-weight: 600;
 }
+
+@media (min-width: 820px){
+	#contact{
+		margin-bottom: 80%;
+	}
+
+
+
+}
+	
+
