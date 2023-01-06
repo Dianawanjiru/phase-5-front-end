@@ -55,6 +55,9 @@ const Footer = ()=> {
                         </ul>
                     </li>
                 </ul>
+                <p className="copyright">
+                 © Copyright 2023, Moringa. All rights reserved.
+                </p>
             </div>
 
         </>
