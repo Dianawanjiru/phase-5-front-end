@@ -16,8 +16,8 @@ function Login({ onLogin }) {
                 <LoginForm onLogin={onLogin} />
                 <br />
                 <p>
-                  Don't have an account? &nbsp;
-                  <a href='' onClick={() => setShowLogin(false)}>Sign Up</a>
+                  Don't have an account?
+                  <a onClick={() => setShowLogin(false)}>Sign Up</a>
                 </p>
               </>
           )
@@ -26,8 +26,8 @@ function Login({ onLogin }) {
                 <SignUpForm onLogin={onLogin} />
                 <br />
                 <p>
-                  Already have an account? &nbsp;
-                  <a href='' onClick={() => setShowLogin(true)}>Log In</a>
+                  Already have an account?
+                  <a className='btn   btn-block btn-light text-primary ' onClick={() => setShowLogin(true)}>Log In</a>
                 </p>
          
               </>
