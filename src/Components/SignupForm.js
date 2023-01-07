@@ -83,8 +83,7 @@ function SignUpForm({onLogin}) {
                <button  type='submit' className='btn btn-md  btn-block '> {isLoading ? "Loading..." : "SignUp"}</button>
                 </div> 
             </form> 
-            <hr></hr>
-            {errors?.map((err) => (
+                     {errors?.map((err) => (
              <div className='alert alert-danger rounded-0'key={err}>{err}</div>
             ))}
     

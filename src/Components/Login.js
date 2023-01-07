@@ -7,14 +7,13 @@ function Login({ onLogin }) {
     return (
       <div className="container">
       <div className='row justify-content-center'>
-    <div className='loginForm' style={{background:"black"}}>
+    <div className='loginForm' >
     <h2 className='logoName'>CA.RE.NTAL</h2>
          {
           showLogin
           ? (
               <>
                 <LoginForm onLogin={onLogin} />
-                <br />
                 <p>
                   Don't have an account?
                   <a onClick={() => setShowLogin(false)}>Sign Up</a>

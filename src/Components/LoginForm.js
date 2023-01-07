@@ -57,7 +57,7 @@ const LoginForm = ({onLogin}) =>{
                 </div> 
                 </form> 
             <div>
-              <hr></hr>
+             
     
             {errors?.map((err) => (
              <div className='alert alert-danger rounded-0'key={err}>{err}</div>
