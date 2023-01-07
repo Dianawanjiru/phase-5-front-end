@@ -1,7 +1,22 @@
+h2{
+    text-align: left;
+    color: orange;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 h3 {
     color: orange;
 }
 
 div {
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 2px 30px;
+    background-color: orange;
 }

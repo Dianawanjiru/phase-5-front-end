@@ -27,8 +27,10 @@ const LoginForm = ({onLogin}) =>{
         });
       }
      return ( 
+      
     
       <div className="login-card"> 
+      <h2 className='weblogo'>CA.RE.NTAL</h2>
     
         <div className='card'>
            <div className='card-body'>
@@ -50,8 +52,8 @@ const LoginForm = ({onLogin}) =>{
                     <p>Forgot Password? <a href='#'>Reset</a></p> 
                     </div>
 <br/>
-                 <div className='loginBtn'>
-               <button type='submit' className='btn btn-md  btn-block '>{isLoading ? "Loading..." : "Login"}</button>
+                 <div>
+               <button type='submit' >{isLoading ? "Loading..." : "Login"}</button>
                 </div> 
                 </form> 
             <div>
