@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import style from './styles/style.css'
 
 
 function SignUpForm({onLogin}) {
@@ -43,7 +44,7 @@ function SignUpForm({onLogin}) {
     
       <div className="login-card"> 
         <div className='card'>
-    <h6 className='alert alert-info rounded-0'>SIGN UP</h6>
+    <h3>SIGN UP</h3>
           <div className='card-body'>
             <form  onSubmit={handleSubmit} method="post">
             <div className='form-group'>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import style from './styles/style.css'
 
 const LoginForm = ({onLogin}) =>{ 
     const [username, setUsername] = useState("");
@@ -33,7 +33,7 @@ const LoginForm = ({onLogin}) =>{
         <div className='card'>
            <div className='card-body'>
     
-    <h6 className='alert alert-info rounded-0'>LOGIN</h6>
+    <h3>LOGIN</h3>
             <form  onSubmit={handleSubmit}>
               <div className='form-group'>
      
