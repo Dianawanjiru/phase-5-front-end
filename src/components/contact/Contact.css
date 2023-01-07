@@ -5,6 +5,8 @@
 	width:100%;
 	margin:0 auto;
 	position:relative;
+	box-shadow: 0 0 8px orange; 
+	
 }
 
 #contact {
@@ -56,7 +58,7 @@
 
 @media (min-width: 820px){
 	#contact{
-		margin-bottom: 80%;
+		margin-bottom: 70%;
 	}
 
 
