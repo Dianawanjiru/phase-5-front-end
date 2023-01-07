@@ -37,13 +37,18 @@ const LoginForm = ({onLogin}) =>{
             <form  onSubmit={handleSubmit}>
               <div className='form-group'>
      
-                <input type="text" id='username' placeholder='username' onChange={(e) => setUsername(e.target.value)}   required className='form-control' />
+                <input type="email" id='email' placeholder='Enter Email Address' onChange={(e) => setUsername(e.target.value)}   required className='form-control' />
              </div>   
              <br/>
                  <div className='form-group'>
                
-                <input type="password" required name='password' placeholder='password' onChange={(e) => setPassword(e.target.value)}  className='form-control' />
+                <input type="password" required name='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)}  className='form-control' />
                 </div>
+
+                <div>
+                    <p>Don't have an account? <a href='#'>Sign Up</a></p> 
+                    <p>Forgot Password? <a href='#'>Reset</a></p> 
+                    </div>
 <br/>
                  <div className='loginBtn'>
                <button type='submit' className='btn btn-md  btn-block '>{isLoading ? "Loading..." : "Login"}</button>
