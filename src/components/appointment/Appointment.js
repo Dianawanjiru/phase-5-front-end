@@ -4,10 +4,15 @@ import './Appointment.css';
 
 function Appointment(){
 
+        const handleSubmit = event => {
+      // prevent page refresh
+      event.preventDefault();
+    }
+
     return(
-        <>
+        <Fragment>
             <div className="testbox">
-                <form className='appointment-form'>
+                <form className='appointment-form' onSubmit={handleSubmit}>
                     <div className="banner">
                         <h1>Appointment Form</h1>
                     </div>
@@ -91,7 +96,7 @@ function Appointment(){
                 </form>
             </div>
             <Footer />
-        </>
+        </Fragment>
 
     )
 }
