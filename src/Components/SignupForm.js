@@ -77,9 +77,7 @@ function SignUpForm({onLogin}) {
                 <input type="password" placeholder='Confirm Paasword' onChange={(e) => setConfirmPassword(e.target.password_confirmation)} value={password_confirmation} id='confirmPassword' required className='form-control' />
                 </div>
 
-                <div>
-                    <p>Already have an account? <a href='#'>Login In</a></p> 
-                    </div>
+
                 <br/>
                  <div className='signupBtn'>
                <button  type='submit' className='btn btn-md  btn-block '> {isLoading ? "Loading..." : "SignUp"}</button>
