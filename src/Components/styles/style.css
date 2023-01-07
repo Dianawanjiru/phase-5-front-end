@@ -1,8 +1,12 @@
+*{
+
+}
+
 h2{
     text-align: left;
     color: orange;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 
 h3 {
@@ -20,3 +24,28 @@ button {
     padding: 2px 30px;
     background-color: orange;
 }
+
+input{
+    border-radius: 6px;
+    padding: 0.5vh;
+}
+
+a {
+    color: orange;
+}
+
+p{
+    font-size: 15px;
+}
+
+input:hover {
+    background-color: #f5f5f5;
+    border-color:orange;
+    transition: 0.5s;
+  }
+
+  button:hover{
+    border-color: black;
+  }
+
+ 
