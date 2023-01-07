@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import Contact from './components/contact/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Appointment from './components/appointment/Appointment';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/contacts' element={<Contact/>}></Route>
+          <Route path='/services/appointment' element={<Appointment />}></Route>
         </Routes>
       </Router>
 
