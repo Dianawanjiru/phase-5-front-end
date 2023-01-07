@@ -48,7 +48,7 @@ const LoginForm = ({onLogin}) =>{
                 </div>
 
                 <div>
-                    <p>Don't have an account? <a href='#'>Sign Up</a></p> 
+                 
                     <p>Forgot Password? <a href='#'>Reset</a></p> 
                     </div>
 <br/>
