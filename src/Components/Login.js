@@ -7,8 +7,8 @@ function Login({ onLogin }) {
     return (
       <div className="container">
       <div className='row justify-content-center'>
-    <div className='col-md-6 mt-4' style={{  backgroundColor:"#dede"  }} >
-    <h2 className='text-center mt-4 font-weight-bold'>CA.RE.NTAL</h2>
+    <div className='loginForm' style={{background:"black"}}>
+    <h2 className='logoName'>CA.RE.NTAL</h2>
          {
           showLogin
           ? (
@@ -35,7 +35,7 @@ function Login({ onLogin }) {
           )
         }
     </div>
-        <div className='col-m-6'>  </div>
+        <div>  </div>
   </div>
   </div>
   
