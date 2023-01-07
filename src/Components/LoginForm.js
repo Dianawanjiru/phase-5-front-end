@@ -30,7 +30,7 @@ const LoginForm = ({onLogin}) =>{
       
     
       <div className="login-card"> 
-      <h2 className='weblogo'>CA.RE.NTAL</h2>
+     
     
         <div className='card'>
            <div className='card-body'>

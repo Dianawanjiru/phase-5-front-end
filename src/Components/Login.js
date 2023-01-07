@@ -9,7 +9,6 @@ function Login({ onLogin }) {
       <div className='row justify-content-center'>
     <div className='col-md-6 mt-4' style={{  backgroundColor:"#dede"  }} >
     <h2 className='text-center mt-4 font-weight-bold'>CA.RE.NTAL</h2>
-    <div className='alert alert-info rounded-0'>Get all your workout lessons at the comfort of your home.</div>
          {
           showLogin
           ? (
@@ -18,7 +17,7 @@ function Login({ onLogin }) {
                 <br />
                 <p>
                   Don't have an account? &nbsp;
-                  <button className='btn  btn-block btn-light text-primary ' onClick={() => setShowLogin(false)}>Sign Up</button>
+                  <a href='' onClick={() => setShowLogin(false)}>Sign Up</a>
                 </p>
               </>
           )
@@ -28,7 +27,7 @@ function Login({ onLogin }) {
                 <br />
                 <p>
                   Already have an account? &nbsp;
-                  <button className='btn   btn-block btn-light text-primary ' onClick={() => setShowLogin(true)}>Log In</button>
+                  <a href='' onClick={() => setShowLogin(true)}>Log In</a>
                 </p>
          
               </>
