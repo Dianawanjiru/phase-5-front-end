@@ -52,17 +52,23 @@ function SignUpForm({onLogin}) {
               <br/>
               <div className='form-group'>
           
-              <input type="text" placeholder='Username' onChange={(e) => setUsername(e.target.value)} value={username} id='username' required className='form-control' />
+              <input type="text" placeholder='Enter Username' onChange={(e) => setUsername(e.target.value)} value={username} id='username' required className='form-control' />
               </div>
               <br/>
                 <div className='form-group'>
               
-                <input type="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
+                <input type="email" placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
                 </div> 
+                <br/>
+
+                <div className='form-group'>
+              
+              <input type="text" placeholder='Enter Phone Number'/>
+              </div> 
                 <br/>
                 <div className='form-group'>
               
-                <input type="password" placeholder='Password' required name='password' onChange={(e) => setPassword(e.target.value)} value={password} className='form-control' />
+                <input type="password" placeholder='Enter Password' required name='password' onChange={(e) => setPassword(e.target.value)} value={password} className='form-control' />
                 </div> 
                 <br/>
                 <div className='form-group'>
