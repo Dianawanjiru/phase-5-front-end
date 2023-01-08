@@ -44,6 +44,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: auto;
+    margin-bottom: 40px;
 } 
 
 .car-button{
