@@ -11,7 +11,7 @@
   }
   
   .card {
-    box-shadow: 0 3px 1px 0 orange;
+    box-shadow: 0 3px 2px 0 orange;
     transition: 0.3s;
   }
   
@@ -26,34 +26,38 @@
       margin-left: 10%;
   }
   
-.details{
+.details p{
     padding: 2px 16px;
     color: rgba(255, 255, 255, 0.72);
   }
   
-.details button{
-    margin: 0 auto;
-    font-weight: 800;
-    /* color: orange; */
-    margin-top: 2%;
-    padding: 10px;
-    border: none;
-    border-radius: 200px;
-    background-color: rgba(255, 166, 0, 0.857);
-} 
   
   /* Car Listing Component*/
 
+.hire-cars-header{
+    color: orange;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .cars_display{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: auto;
 } 
+
+.car-button{
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    min-width: 80px;
+    padding: 10px;
+    margin: 10px 10px 10px 30px;
+    border: none;
+    background-color: rgba(255, 166, 0, 0.857);
+    border-radius: 0px 4px 4px 0px;
+}
 
 
 
 /* Media Queries */
-
-@media (max-width: 600px) {
-
-}
