@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState  } from "react";
 import Footer from "../footer/Footer";
 import CarItem from "./CarItem";
-import './Hire.css';
+import './Cars.css';
 
 
 function CarListing(){
