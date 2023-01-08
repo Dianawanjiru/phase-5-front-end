@@ -1,0 +1,59 @@
+/* Car Item Component */
+
+.card{
+    margin-top: 10%;
+    border-radius: 8%;
+    
+  }
+  
+  .card-item > li {
+      list-style: none;
+  }
+  
+  .card {
+    box-shadow: 0 3px 1px 0 orange;
+    transition: 0.3s;
+  }
+  
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(29, 228, 3, 0.623);
+  }
+  
+  .card img {
+      width: 75%;
+      border-radius: 20px;
+      margin-left: 10%;
+  }
+  
+.details{
+    padding: 2px 16px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+  
+.details button{
+    margin: 0 auto;
+    font-weight: 800;
+    /* color: orange; */
+    margin-top: 2%;
+    padding: 10px;
+    border: none;
+    border-radius: 200px;
+    background-color: rgba(255, 166, 0, 0.857);
+} 
+  
+  /* Car Listing Component*/
+
+.cars_display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+} 
+
+
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+
+}
