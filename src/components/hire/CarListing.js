@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState  } from "react";
+import Footer from "../footer/Footer";
 import CarItem from "./CarItem";
 import './Hire.css';
 
@@ -18,11 +19,12 @@ console.log(cars)
 
     return(
         <main>
-                <div className="cars_display">
-                    {cars.map((car) => ( <CarItem key={car.id} car={car} 
-                /> ))} 
-                </div>
-            
+            <h1 className="hire-cars-header">Our Cars</h1>
+            <div className="cars_display">
+                {cars.map((car) => ( <CarItem key={car.id} car={car} 
+            /> ))} 
+            </div>
+            <Footer />
         </main>
     )
 }
