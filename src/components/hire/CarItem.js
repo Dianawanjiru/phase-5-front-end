@@ -28,8 +28,8 @@ function CarItem({ car }){
                                 <p>
                                     <strong>Year:</strong>{year}
                                 </p>
-                                <button> Hire </button>
-                                <button> Details </button>
+                                <button className='car-button'> Hire </button>
+                                <button className='car-button'> Details </button>
                             </div>
                         </div>
                     </li>
