@@ -4,10 +4,10 @@ const Payment = () =>{
     return(
         <>
             <div class="mainscreen">
-                <div class="card">
+                <div class="payment-card">
                     <div class="leftside">
                         <img
-                            src="https://i.pinimg.com/originals/18/9d/dc/189ddc1221d9c1c779dda4ad37a35fa1.png"
+                            src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1600"
                             class="product"
                             alt="Shoes"
                         />
@@ -15,6 +15,7 @@ const Payment = () =>{
                     <div class="rightside">
                         <form action="">
                             <h1>CheckOut</h1>
+                            <h3>Total Price: __</h3>
                             <h2>Payment Information</h2>
                             <p>Cardholder Name</p>
                             <input type="text" class="inputbox" name="name" required />
@@ -27,6 +28,7 @@ const Payment = () =>{
                                 <option value="Visa">Visa</option>
                                 <option value="RuPay">RuPay</option>
                                 <option value="MasterCard">MasterCard</option>
+                                <option value="MasterCard">Global M-Pesa</option>
                             </select>
                             
                             <div class="expcvv">
@@ -35,7 +37,7 @@ const Payment = () =>{
                                     <p class="expcvv_text2">CVV</p>
                                 <input type="password" class="inputbox" name="cvv" id="cvv" required />
                             </div>
-                            <button type="submit" class="button">CheckOut</button>
+                            <button type="submit" class="checkout-button">CheckOut</button>
                         </form>
                     </div>
                 </div>
