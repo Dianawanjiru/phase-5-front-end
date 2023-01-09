@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Cars.css"
 
 function CarItem({ car }){
@@ -28,8 +29,12 @@ function CarItem({ car }){
                                 <p>
                                     <strong>Year:</strong>{year}
                                 </p>
-                                <button className='car-button'> Hire </button>
-                                <button className='car-button'> Details </button>
+                                <button className='car-button'> 
+                                    <Link to={`/cars/${make}`}> Hire </Link>
+                                </button>
+                                <button className='car-button'> 
+                                    <Link to={`/cars/${make}`}> Details </Link> 
+                                </button>
                             </div>
                         </div>
                     </li>
