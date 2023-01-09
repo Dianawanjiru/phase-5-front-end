@@ -5,6 +5,7 @@ import Contact from './components/contact/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Appointment from './components/appointment/Appointment';
 import CarListing from './components/hire/CarListing';
+import Details from './components/pages/Details';
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
         <Routes>
           <Route path='/contacts' element={<Contact/>}></Route>
           <Route path='/services/appointment' element={<Appointment />}></Route>
-          <Route path='/services/hire' element={<CarListing />} />
+          <Route path='/services/hire' element={<CarListing />}/>
+          <Route path="/cars/:slug" element={<Details />}/>
         </Routes>
       </Router>
-
     </div>
   );
 }
