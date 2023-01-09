@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 /* Payment Styles */
 
 
@@ -21,7 +13,7 @@
 
 .payment-card {
 	max-width: 60%;
-    margin: auto;
+    margin-top: 10px;
     background: white;
     position:center;
     align-self: center;
@@ -130,9 +122,9 @@ p{
     }
 
     .rightside{
-        width:auto;
-        border-bottom-left-radius: 1.5rem;
-        padding:0.5rem 3rem 3rem 2rem;
+      width:auto;
+      border-bottom-left-radius: 1.5rem;
+      padding:0.5rem 3rem 3rem 2rem;
       border-radius:0;
     }
 }
