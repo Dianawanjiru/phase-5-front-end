@@ -35,25 +35,12 @@ function Appointment(){
                             <label for="zip">Phone Number<span>*</span></label>
                             <input id="zip" type="text"   name="zip" required/>
                         </div>
-                        <div className="item">
-                            <label for="phone">From Address<span>*</span></label>
-                            <input id="phone" type="tel"   name="phone" />
-                        </div>
-                        <div className="item">
-                            <label for="phone">To Address<span>*</span></label>
-                            <input id="phone" type="tel"   name="phone" />
-                        </div>
                         <br/>
                     </div>
                     <div className="columns">
                         <div className="item">
                             <label for="checkindate">Check-in Date <span>*</span></label>
                             <input id="checkindate" type="date" name="checkindate" />
-                            <i className="fas fa-calendar-alt"></i>
-                        </div>
-                        <div className="item">
-                            <label for="checkoutdate">Check-out Date <span>*</span></label>
-                            <input id="checkoutdate" type="date" name="checkoutdate" />
                             <i className="fas fa-calendar-alt"></i>
                         </div>
                         <div className="item">
@@ -64,16 +51,7 @@ function Appointment(){
                                 <option value="2">Afternoon</option>
                                 <option value="3">Evening</option>
                             </select>
-                        </div>
-                        <div className="item">
-                            <p>Check-out Time </p>
-                            <select>
-                                <option  value="4" disabled selected>Select time</option>
-                                <option value="5" >Morning</option>
-                                <option value="6">Afternoon</option>
-                                <option value="7">Evening</option>
-                            </select>
-                        </div>    
+                        </div>   
                         <div className="item">
                             <p>Persons Capacity</p>
                             <select>

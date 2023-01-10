@@ -20,7 +20,7 @@ const Contact = () => {
     return(
         <>
             <div className="contact-container">  
-                <form id="contact" action="https://app.headlessforms.cloud/api/v1/form-submission/jwZ4BA5abQ" method="post">
+                <form id="contact" action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="post">
                     <h3>Contact Us</h3>                    
                     <input className='input1' placeholder="   NAME:" type="text" name="Name"  required="required"></input>
                     <input className='input1' placeholder="   EMAIL:" type="email" name="Email" tabindex="2"  required="required"></input>

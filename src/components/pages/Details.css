@@ -4,13 +4,19 @@
 	color: orange;
 	font-weight: 700;
 	font-size:30px;
-	padding-left: 30px;
-	margin-left: 10px;
+	/* padding-left: 30px; */
+	/* margin-left: 10px; */
 }
 
 .title span{
 	color: rgb(3, 250, 3);
 	
+}
+
+.title > h2 {
+	text-align: center;
+	font-size: 30px;
+
 }
 
 
@@ -27,12 +33,13 @@ Make changes here if you want to modify both elements at the same time*/
 	margin-left: 20px;
 	color: orange;
 	font-size: 20px;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 .desc{
 	font-size: 28px;
 	color: #fafafa;
+	font-weight: 700;
 }
 
 .desc span{
@@ -43,7 +50,7 @@ Make changes here if you want to modify both elements at the same time*/
 	display: inline-block;
 	margin-left: 0.3em;
 	color: orange;
-	width: 70%;
+	width: 65%;
 }
 
 .info ul{
@@ -51,4 +58,8 @@ Make changes here if you want to modify both elements at the same time*/
 	display: inline-block;
 	justify-content: space-between;
 	
+}
+
+.info ul strong{
+	font-weight: 700;
 }

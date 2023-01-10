@@ -25,14 +25,6 @@
     line-height: 83px;
 }
 
-legend {
-    padding: 10px;      
-    font-size: 18px;
-    font-weight: 800;
-    color: orange;
-    background-color: #006622a0;
-}
-
 textarea {
     width: calc(100% - 12px);
     padding: 5px;
@@ -45,6 +37,12 @@ textarea {
     border-radius: 6px;
     background-color: #000;;
     box-shadow: 0 0 8px orange; 
+}
+
+.appointment-form h2{
+    color: orange;
+    background-color: #034b1b;
+    padding: 10px;
 }
 
 .banner {

@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import React from 'react';
 import './Details.css';
 import carsData from '../data/CarsData';
-import Payment from './Payment';
+// import Payment from './Payment';
 import Hire from './Hire';
 import Footer from '../footer/Footer';
 
@@ -13,18 +13,20 @@ const Details = () => {
 
     return(
         <>            
-            <h2 class="title">
-                Hire this <span>{singleCarItem.make}{' '}{singleCarItem.model}</span>
-            </h2>
-            <div class="app">
-                <div class="image-car">
+            <div className="title">
+                <h2>
+                    Hire this <span>{singleCarItem.make}{' '}{singleCarItem.model}</span>
+                </h2>
+            </div>
+            <div className="app">
+                <div className="image-car">
                     <img src ={singleCarItem.image} alt="This is a screenshot" />
                 </div>
-                <div class="description">
+                <div className="description">
                     <h3>Overview</h3>
                     <p className='desc'>The <span>{singleCarItem.make}{' '}{singleCarItem.model}</span> has a mileage of <span>{singleCarItem.mileage}</span> kpml. 
-                        The <span>{singleCarItem.fuel_type}</span> car is of <span>{singleCarItem.transmission}</span><br/>transmission. 
-                        and has an engine size of <span>{singleCarItem.engine_size}</span>. Enjoy this <span>{singleCarItem.year}</span><br /> manufactured car,
+                        The <span>{singleCarItem.fuel_type}</span> car is of <span>{singleCarItem.transmission}</span><br/>transmission 
+                        and encompasses an engine size of <span>{singleCarItem.engine_size}</span>. Enjoy this <span>{singleCarItem.year}</span><br /> manufactured car,
                         only at $<span>{singleCarItem.price}</span> per day!
                     </p>
                     <span className="hint-star star">
@@ -44,12 +46,11 @@ const Details = () => {
                             <li><strong>Mileage: </strong> {singleCarItem.mileage}</li>
                             <li><strong>Year of Manufacture: </strong>{singleCarItem.year}</li>
                         </ul>
-                        <p>Total: ${singleCarItem.price}</p>
                     </div>
                 </div>
 		    </div>
             <Hire />
-            <Payment />
+            {/* <Payment /> */}
             <Footer />
         </>
     )

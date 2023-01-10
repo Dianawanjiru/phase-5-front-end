@@ -1,4 +1,7 @@
 import './Hire.css';
+import { useParams } from 'react-router-dom';
+import carsData from '../data/CarsData';
+
 
 const Hire = () =>{
 
@@ -6,21 +9,41 @@ const Hire = () =>{
         // prevent page refresh
         event.preventDefault();
       }
+
+      const { slug } = useParams();
+      const singleCarItem = carsData.find((item) => item.make === slug);
   
     return(
         <>
             <div className="testbox">
-                <form className='appointment-form' onSubmit={handleSubmit}>
+                <form className='appointment-form' action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="post" onSubmit={handleSubmit} >
                     <br/>
                     <h2> Booking Form </h2>
+                    <p>Total: ${" "}{singleCarItem.price}</p>
                     <div className="columns">
                         <div className="item">
+                            <label for="fname">Make of Car Hired<span>*</span></label>
+                            <input id="fname" type="text" name="Make" value={singleCarItem.make} />
+                        </div>
+                        <div className="item">
+                            <label for="fname">Model of Car Hired<span>*</span></label>
+                            <input id="fname" type="text" name="Model" value={singleCarItem.model} />
+                        </div>
+                        <div className="item">
+                            <label for="fname">Fuel Type<span>*</span></label>
+                            <input id="fname" type="text" name="Fuel-Type" value={singleCarItem.fuel_type} />
+                        </div>
+                        <div className="item">
+                            <label for="fname">Year of Manufacture<span>*</span></label>
+                            <input id="fname" type="text" name="YOM" value={singleCarItem.year} />
+                        </div>
+                        <div className="item">
                             <label for="fname">First Name<span>*</span></label>
-                            <input id="fname" type="text" name="fname" />
+                            <input id="fname" type="text" name="first-name" />
                         </div>
                         <div className="item">
                             <label for="lname"> Last Name<span>*</span></label>
-                            <input id="lname" type="text" name="lname" />
+                            <input id="lname" type="text" name="last-name" />
                         </div>
                         <div className="item">
                             <label for="address">Email Address<span>*</span></label>

@@ -25,7 +25,7 @@ function CarListing(){
             });
 },[]);
 
-console.log(cars)
+// console.log(cars)
 
 
     return(
