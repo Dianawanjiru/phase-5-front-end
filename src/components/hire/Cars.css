@@ -1,6 +1,12 @@
 /* Car Item Component */
 
-.card{
+BarLoader{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+.card-list{
     margin-top: 10%;
     border-radius: 8%;
     
@@ -10,17 +16,17 @@
       list-style: none;
   }
   
-  .card {
+  .card-list {
     box-shadow: 0 3px 2px 0 orange;
     transition: 0.3s;
   }
   
   
-  .card:hover {
+  .card-list:hover {
     box-shadow: 0 8px 16px 0 rgba(29, 228, 3, 0.623);
   }
   
-  .card img {
+  .card-list img {
       width: 75%;
       border-radius: 20px;
       margin-left: 10%;

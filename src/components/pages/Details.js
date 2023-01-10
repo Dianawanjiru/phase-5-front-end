@@ -4,6 +4,7 @@ import './Details.css';
 import carsData from '../data/CarsData';
 import Payment from './Payment';
 import Hire from './Hire';
+import Footer from '../footer/Footer';
 
 
 const Details = () => {
@@ -49,6 +50,7 @@ const Details = () => {
 		    </div>
             <Hire />
             <Payment />
+            <Footer />
         </>
     )
 
