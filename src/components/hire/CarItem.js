@@ -6,7 +6,7 @@ function CarItem({ car }){
     return(
             <>
                 <div className="car-item">
-                    <li className="card">
+                    <li className="card-list">
                         <div className="card_components">
                             <img src={image} alt={model} />
                             <div className="details">
