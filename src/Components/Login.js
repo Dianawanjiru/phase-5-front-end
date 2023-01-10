@@ -15,12 +15,12 @@ function Login({ onLogin }) {
               <>
                 <LoginForm onLogin={onLogin} />
 
-                <p>
-                    Forgot Password? <a >Reset</a>
+                <p className='option'>
+                    Forgot Password? <a id='passwordReset'>Reset</a>
                 </p> 
 
                 
-                <p>
+                <p className='option'>
                   Don't have an account? <a className='link' onClick={() => setShowLogin(false)}>Sign Up</a>
                 </p>
               </>
@@ -29,7 +29,7 @@ function Login({ onLogin }) {
               <>
                 <SignUpForm onLogin={onLogin} />
                 <br />
-                <p>
+                <p className='option'>
                   Already have an account?
                   <a className='link' onClick={() => setShowLogin(true)}>Log In</a>
                 </p>
