@@ -8,15 +8,20 @@ function Login({ onLogin }) {
       <div className="container">
       <div className='row justify-content-center'>
     <div className='loginForm' >
-    <h2 className='logoName'>CA.RE.NTAL</h2>
+    <h1 className='logoName'>CA.R.ENTAL</h1>
          {
           showLogin
           ? (
               <>
                 <LoginForm onLogin={onLogin} />
+
                 <p>
-                  Don't have an account?
-                  <a onClick={() => setShowLogin(false)}>Sign Up</a>
+                    Forgot Password? <a >Reset</a>
+                </p> 
+
+                
+                <p>
+                  Don't have an account? <a onClick={() => setShowLogin(false)}>Sign Up</a>
                 </p>
               </>
           )
@@ -26,7 +31,7 @@ function Login({ onLogin }) {
                 <br />
                 <p>
                   Already have an account?
-                  <a className='btn   btn-block btn-light text-primary ' onClick={() => setShowLogin(true)}>Log In</a>
+                  <a className='link' onClick={() => setShowLogin(true)}>Log In</a>
                 </p>
          
               </>
