@@ -6,7 +6,7 @@ function Login({ onLogin }) {
     const [showLogin, setShowLogin] = useState(true);
     return (
       <div className="container">
-      <div className='row justify-content-center'>
+      <div>
     <div className='loginForm' >
     <h1 className='logoName'>CA.R.ENTAL</h1>
          {
@@ -21,7 +21,7 @@ function Login({ onLogin }) {
 
                 
                 <p>
-                  Don't have an account? <a onClick={() => setShowLogin(false)}>Sign Up</a>
+                  Don't have an account? <a className='link' onClick={() => setShowLogin(false)}>Sign Up</a>
                 </p>
               </>
           )
