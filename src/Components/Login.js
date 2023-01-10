@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
 import SignUpForm from './SignupForm';
+import ResetPasswordForm from './PswdresetForm';
 
 function Login({ onLogin }) {
     const [showLogin, setShowLogin] = useState(true);
@@ -27,7 +28,9 @@ function Login({ onLogin }) {
           )
           : (
               <>
-                <SignUpForm onLogin={onLogin} />
+              <ResetPasswordForm/>
+              <br/>
+                {/* <SignUpForm onLogin={onLogin} /> */}
                 <br />
                 <p className='option'>
                   Already have an account?

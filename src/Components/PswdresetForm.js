@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles/style.css'
 
 const ResetPasswordForm = (props) => {
   const [password, setPassword] = useState('');
@@ -15,26 +16,34 @@ const ResetPasswordForm = (props) => {
   }
   
   return (
+    <div className='resetform'>
+        <h3 className='header'>RESET PASSWORD</h3>
     <form onSubmit={handleSubmit}>
-      <label>
-        New Password:
+      
         <input
+        id='fontinput' 
+        placeholder='New Password'
           type="password"
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-      </label>
-      <label>
-        Confirm Password:
+    <br/>
+    <br/>
+      
         <input
+        id='fontinput' 
+        placeholder='Confirm Password'
           type="password"
           value={confirmPassword}
           onChange={e => setConfirmPassword(e.target.value)}
         />
-      </label>
+    
+      <br/>
+      <br/>
       {error && <p className="error">{error}</p>}
-      <input type="submit" value="Submit" />
+      <button id='btn' type="submit">Submit</button>
     </form>
+    </div>
   );
 };
 

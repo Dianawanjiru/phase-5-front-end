@@ -48,7 +48,7 @@ function SignUpForm({onLogin}) {
           <div className='card-body'>
             <form  onSubmit={handleSubmit} method="post">
             <div className='form-group'>
-               <input type="text" placeholder='Full Name' onChange={(e) => setName(e.target.value)} value={name} id='name' required className='form-control' />
+               <input id='fontinput'  type="text" placeholder='Full Name' onChange={(e) => setName(e.target.value)} value={name} id='name' required className='form-control' />
               </div>
               <br/>
               <div className='form-group'>
@@ -58,23 +58,23 @@ function SignUpForm({onLogin}) {
               <br/>
                 <div className='form-group'>
               
-                <input type="email" placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
+                <input id='fontinput'  type="email" placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
                 </div> 
                 <br/>
 
-                <div className='form-group'>
+                <div>
               
-              <input type="text" placeholder='Enter Phone Number'/>
+              <input id='fontinput'  type="text" placeholder='Enter Phone Number'/>
               </div> 
                 <br/>
-                <div className='form-group'>
+                <div>
               
-                <input type="password" placeholder='Enter Password' required name='password' onChange={(e) => setPassword(e.target.value)} value={password} className='form-control' />
+                <input id='fontinput'  type="password" placeholder='Enter Password' required name='password' onChange={(e) => setPassword(e.target.value)} value={password} className='form-control' />
                 </div> 
                 <br/>
-                <div className='form-group'>
+                <div>
                
-                <input type="password" placeholder='Confirm Paasword' onChange={(e) => setConfirmPassword(e.target.password_confirmation)} value={password_confirmation} id='confirmPassword' required className='form-control' />
+                <input id='fontinput'  type="password" placeholder='Confirm Paasword' onChange={(e) => setConfirmPassword(e.target.password_confirmation)} value={password_confirmation} id='confirmPassword' required className='form-control' />
                 </div>
 
 
