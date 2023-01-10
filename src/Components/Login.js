@@ -17,7 +17,7 @@ function Login({ onLogin }) {
                 <LoginForm onLogin={onLogin} />
 
                 <p className='option'>
-                    Forgot Password? <a id='passwordReset'>Reset</a>
+                    Forgot Password? <a id='passwordReset' onClick={()=> setShowLogin(false)}>Reset</a>
                 </p> 
 
                 
@@ -28,9 +28,8 @@ function Login({ onLogin }) {
           )
           : (
               <>
-              <ResetPasswordForm/>
-              <br/>
-                {/* <SignUpForm onLogin={onLogin} /> */}
+            
+                <SignUpForm onLogin={onLogin} />
                 <br />
                 <p className='option'>
                   Already have an account?
@@ -40,6 +39,13 @@ function Login({ onLogin }) {
               </>
              
           )
+          
+          // (
+          //   <>
+          //    <br/>
+          //    <ResetPasswordForm onLogin={onLogin}/>
+          //     <br/></>
+          // )
         }
     </div>
         <div>  </div>

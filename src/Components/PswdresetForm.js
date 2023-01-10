@@ -21,8 +21,7 @@ const ResetPasswordForm = (props) => {
     <form onSubmit={handleSubmit}>
       
         <input
-        id='fontinput' 
-        placeholder='New Password'
+         placeholder='New Password'
           type="password"
           value={password}
           onChange={e => setPassword(e.target.value)}
@@ -31,7 +30,6 @@ const ResetPasswordForm = (props) => {
     <br/>
       
         <input
-        id='fontinput' 
         placeholder='Confirm Password'
           type="password"
           value={confirmPassword}
