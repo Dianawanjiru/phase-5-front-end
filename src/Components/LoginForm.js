@@ -50,7 +50,7 @@ const LoginForm = ({onLogin}) =>{
                 
 <br/>
                  <div>
-               <button type='submit' >{isLoading ? "Loading..." : "Login"}</button>
+               <button id='btn' type='submit' >{isLoading ? "Loading..." : "Login"}</button>
                 </div> 
                 </form> 
             <div>

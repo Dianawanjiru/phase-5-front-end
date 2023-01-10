@@ -80,7 +80,7 @@ function SignUpForm({onLogin}) {
 
                 <br/>
                  <div className='signupBtn'>
-               <button  type='submit' className='btn btn-md  btn-block '> {isLoading ? "Loading..." : "SignUp"}</button>
+               <button id='btn' type='submit' className='btn btn-md  btn-block '> {isLoading ? "Loading..." : "SignUp"}</button>
                 </div> 
             </form> 
                      {errors?.map((err) => (

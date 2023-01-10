@@ -17,13 +17,13 @@ background-color: black;
     color: orange;
 }
 
-div {
+.container {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.05em;
 }
 
-button {
+#btn {
     border-radius: 4px;
     font-size: 18px;
     padding: 2px 30px;
@@ -53,11 +53,8 @@ p{
     transition: 0.5s;
   } */
 
-  button:hover{
-    border-color: black;
-  }
 
-  a:hover{
+  .link{
     cursor: pointer;
  }
 
