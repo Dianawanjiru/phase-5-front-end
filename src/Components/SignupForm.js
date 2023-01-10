@@ -44,7 +44,7 @@ function SignUpForm({onLogin}) {
     
       <div className="login-card"> 
         <div className='card'>
-    <h3>SIGN UP</h3>
+    <h3 className='header'>SIGN UP</h3>
           <div className='card-body'>
             <form  onSubmit={handleSubmit} method="post">
             <div className='form-group'>
