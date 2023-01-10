@@ -35,7 +35,7 @@ const LoginForm = ({onLogin}) =>{
         <div className='card'>
            <div className='card-body'>
     
-    <h3>LOGIN</h3>
+    <h3 className='header'>LOGIN</h3>
             <form  onSubmit={handleSubmit}>
               <div className='form-group'>
      
@@ -47,10 +47,7 @@ const LoginForm = ({onLogin}) =>{
                 <input type="password" required name='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)}  className='form-control' />
                 </div>
 
-                <div>
-                 
-                    <p>Forgot Password? <a href='#'>Reset</a></p> 
-                    </div>
+                
 <br/>
                  <div>
                <button type='submit' >{isLoading ? "Loading..." : "Login"}</button>
