@@ -1,0 +1,37 @@
+.footer{
+    color: #fafafa;
+    background-color: #FD9D17;
+    padding: 10px 10px 20px 10px;
+    min-width:100%;
+}
+
+.footer .main-footer{
+    font-weight: 800;
+    font-size: larger;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.f-submenu{
+    font-size: medium;
+    font-weight: 400;
+}
+
+.copyright{
+    color: #000;
+    margin-left: 5%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    .footer .main-footer{
+        display: inline;
+        width: 10%;
+    }
+}
+
+

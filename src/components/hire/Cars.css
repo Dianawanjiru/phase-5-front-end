@@ -1,0 +1,70 @@
+/* Car Item Component */
+
+BarLoader{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+.card-list{
+    margin-top: 10%;
+    border-radius: 8%;
+    
+  }
+  
+  .card-item > li {
+      list-style: none;
+  }
+  
+  .card-list {
+    box-shadow: 0 3px 2px 0 orange;
+    transition: 0.3s;
+  }
+  
+  
+  .card-list:hover {
+    box-shadow: 0 8px 16px 0 rgba(29, 228, 3, 0.623);
+  }
+  
+  .card-list img {
+      width: 75%;
+      border-radius: 20px;
+      margin-left: 10%;
+  }
+  
+.details p{
+    padding: 2px 16px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+  
+  
+  /* Car Listing Component*/
+
+.hire-cars-header{
+    color: orange;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cars_display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    margin-bottom: 40px;
+} 
+
+.car-button{
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    min-width: 80px;
+    padding: 10px;
+    margin: 10px 10px 10px 30px;
+    border: none;
+    background-color: rgba(255, 166, 0, 0.857);
+    border-radius: 0px 4px 4px 0px;
+}
+
+
+
+/* Media Queries */
