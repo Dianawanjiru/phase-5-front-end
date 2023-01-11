@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import './Contact.css';
 import Footer from "../footer/Footer";
+import Navbar from "../navbar/Navbar";
 
 
 
@@ -19,6 +20,7 @@ const Contact = () => {
 
     return(
         <>
+            <Navbar/>
             <div className="contact-container">  
                 <form id="contact" action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="post">
                     <h3>Contact Us</h3>                    

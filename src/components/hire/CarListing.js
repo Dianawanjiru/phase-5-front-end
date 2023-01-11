@@ -4,6 +4,7 @@ import Footer from "../footer/Footer";
 import CarItem from "./CarItem";
 import './Cars.css';
 import PacmanLoader from "react-spinners/PacmanLoader";
+import Navbar from "../navbar/Navbar";
 
 
 function CarListing(){
@@ -30,6 +31,7 @@ function CarListing(){
 
     return(
         <main>
+            <Navbar />
             <h1 className="hire-cars-header">Our Cars</h1>
 
              {

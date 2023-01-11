@@ -72,6 +72,11 @@ ul{
     border-radius: 6px;
 }
 
+.disabled-link {
+    pointer-events: none;
+  }
+
+
 .submenu{
     font-size: 10px;
     color: #fafafa;

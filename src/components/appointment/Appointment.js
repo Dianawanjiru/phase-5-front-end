@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import Footer from '../footer/Footer';
+import Navbar from '../navbar/Navbar';
 import './Appointment.css';
 
 function Appointment(){
@@ -11,6 +12,7 @@ function Appointment(){
 
     return(
         <Fragment>
+            <Navbar />
             <div className="testbox">
                 <form className='appointment-form' onSubmit={handleSubmit}>
                     <div className="banner">
