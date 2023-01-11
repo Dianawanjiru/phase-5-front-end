@@ -5,6 +5,7 @@ import carsData from '../data/CarsData';
 // import Payment from './Payment';
 import Hire from './Hire';
 import Footer from '../footer/Footer';
+import Navbar from '../navbar/Navbar';
 
 
 const Details = () => {
@@ -12,7 +13,8 @@ const Details = () => {
     const singleCarItem = carsData.find((item) => item.make === slug);
 
     return(
-        <>            
+        <>
+            <Navbar />            
             <div className="title">
                 <h2>
                     Hire this <span>{singleCarItem.make}{' '}{singleCarItem.model}</span>

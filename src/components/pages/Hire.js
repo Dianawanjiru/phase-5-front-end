@@ -1,6 +1,7 @@
 import './Hire.css';
 import { useParams } from 'react-router-dom';
 import carsData from '../data/CarsData';
+import Navbar from '../navbar/Navbar';
 
 
 const Hire = () =>{
@@ -15,6 +16,7 @@ const Hire = () =>{
   
     return(
         <>
+            <Navbar />
             <div className="testbox">
                 <form className='appointment-form' action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="post" onSubmit={handleSubmit} >
                     <br/>
