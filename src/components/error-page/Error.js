@@ -1,6 +1,8 @@
-import './Error.css'
+import './Error.css';
+import { useNavigate } from 'react-router-dom';
 
 function Error(){
+    const navigate = useNavigate();
     return(
         <>
             <div className='error-container'>
@@ -9,8 +11,8 @@ function Error(){
                     <p>Oops! Page Not Found</p>
                     <div className="buttons-con">
                         <div className="action-link-wrap">
-                        <a onclick="history.back(-1)" className="link-button link-back-button">Go Back</a>
-                        <a href="" className="link-button">Go to Home Page</a>
+                        <button onClick={() => navigate(-1)} className="link-button link-back-button">Go Back</button>
+                        <a href="#" className="link-button">Go to Home Page</a>
                     </div>
                 </div>
             </div>
