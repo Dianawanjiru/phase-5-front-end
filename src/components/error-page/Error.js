@@ -12,7 +12,7 @@ function Error(){
                     <div className="buttons-con">
                         <div className="action-link-wrap">
                         <button onClick={() => navigate(-1)} className="link-button link-back-button">Go Back</button>
-                        <a href="#" className="link-button">Go to Home Page</a>
+                        <a href="localhost:3000/home" className="link-button">Go to Home Page</a>
                     </div>
                 </div>
             </div>
