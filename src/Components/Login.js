@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import LoginForm from './LoginForm';
 import SignUpForm from './SignupForm';
 import ResetPasswordForm from './PswdresetForm';
@@ -17,7 +18,7 @@ function Login({ onLogin }) {
                 <LoginForm onLogin={onLogin} />
 
                 <p className='option'>
-                    Forgot Password? <a id='passwordReset' onClick={()=> setShowLogin(false)}>Reset</a>
+                    Forgot Password? <Link to='/Forgot Password' id='passwordReset'>Reset</Link>
                 </p> 
 
                 
@@ -28,7 +29,7 @@ function Login({ onLogin }) {
           )
           : (
               <>
-            
+            {/* <ResetPasswordForm onLogin={onLogin}/> */}
                 <SignUpForm onLogin={onLogin} />
                 <br />
                 <p className='option'>
@@ -40,13 +41,7 @@ function Login({ onLogin }) {
              
           )
           
-          // (
-          //   <>
-          //    <br/>
-          //    <ResetPasswordForm onLogin={onLogin}/>
-          //     <br/></>
-          // )
-        }
+                }
     </div>
         <div>  </div>
   </div>

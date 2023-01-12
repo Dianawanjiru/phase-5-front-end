@@ -5,13 +5,15 @@ const ResetPasswordForm = (props) => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState(null);
+  const[success, setSuccess] = useState(null);
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password !== confirmPassword) {
-      setError('Passwords do not match');
+    if (password == confirmPassword) {
+     setSuccess("Password Changed Succesfully😊")
     } else {
-      // rest of the submit logic
+      setError('Passwords do not match😕!');
+     
     }
   }
   
@@ -38,6 +40,7 @@ const ResetPasswordForm = (props) => {
     
       <br/>
       <br/>
+      {success && <p className="sucess">{success}</p>}
       {error && <p className="error">{error}</p>}
       <button id='btn' type="submit">Submit</button>
     </form>
