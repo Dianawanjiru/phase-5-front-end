@@ -19,13 +19,13 @@ function App() {
   if (!user) return <Login onLogin={setUser} />;
 
   return (
-
-<Router>
-/**code goes here */
-{/* <Route exact path="/" component={Login} /> */}
-<Route exact path="/Forgot Password" component={ResetPasswordForm} />
-    </Router>
-  
+<></>
+// {/* <Router>
+// /**code goes here */
+// {/* <Route exact path="/" component={Login} /> */}
+// <Route exact path="/Forgot Password" component={ResetPasswordForm} />
+//     </Router>
+//    */}
   );
 }
 

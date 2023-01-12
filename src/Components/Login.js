@@ -17,9 +17,9 @@ function Login({ onLogin }) {
               <>
                 <LoginForm onLogin={onLogin} />
 
-                <p className='option'>
+                {/* <p className='option'>
                     Forgot Password? <Link to='/Forgot Password' id='passwordReset'>Reset</Link>
-                </p> 
+                </p>  */}
 
                 
                 <p className='option'>
