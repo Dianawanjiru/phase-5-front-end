@@ -6,7 +6,7 @@ import Appointment from './components/appointment/Appointment';
 import CarListing from './components/hire/CarListing';
 import Details from './components/pages/Details';
 import Error from './components/error-page/Error';
-import Payment from './components/pages/Payment';
+import Payment from './components/pages/payment/CardPayment';
 
 
 function App() {
