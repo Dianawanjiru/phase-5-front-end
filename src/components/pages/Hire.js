@@ -1,7 +1,7 @@
 import './Hire.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import carsData from '../data/CarsData';
-import Navbar from '../navbar/Navbar';
+
 
 
 const Hire = () =>{
@@ -16,7 +16,6 @@ const Hire = () =>{
   
     return(
         <>
-            <Navbar />
             <div className="testbox">
                 <form className='appointment-form' action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="post" onSubmit={handleSubmit} >
                     <br/>
@@ -100,7 +99,9 @@ const Hire = () =>{
                         <textarea id="instruction" rows="3"></textarea>
                     </div>
                     <div className="btn-block">
-                        <button type="submit" href="/">Submit</button>
+                        <Link to={`/cars/${singleCarItem.make}/payment`}>
+                            <button type="submit" href="/">Submit</button>
+                        </Link>
                     </div>
                 </form>
             </div>
