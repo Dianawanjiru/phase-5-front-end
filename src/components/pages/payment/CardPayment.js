@@ -1,11 +1,13 @@
-import Navbar from '../navbar/Navbar';
-import Footer from '../footer/Footer';
-import './Payment.css';
-import carsData from '../data/CarsData';
+import Navbar from '../../navbar/Navbar';
+import Footer from '../../footer/Footer';
+import './CardPayment.css';
+import carsData from '../../data/CarsData';
 import { useParams } from 'react-router-dom';
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
 import { useState } from 'react';
+import Mpesa from './Mpesa';
+
 
 const Payment = () =>{
 
@@ -30,9 +32,9 @@ const Payment = () =>{
     return(
         <>
             <Navbar />
-            <div class="mainscreen">
-                <div class="payment-card">
-                    <div class="leftside">
+            <div className="mainscreen">
+                <div className="payment-card">
+                    <div className="leftside">
                         <div className='product'>
                             <Cards 
                                 cvc={data.cvc}
@@ -43,54 +45,55 @@ const Payment = () =>{
                             />
                         </div>
                     </div>
-                    <div class="rightside">
+                    <div className="rightside">
                         <form action="">
-                            <h1>CheckOut</h1>
+                            <h1>Pay With Card</h1>
                             <h3>Total Price: <span>${singleCarItem.price}</span></h3>
                             <h2>Payment Information</h2>
                             <p>Cardholder Name</p>
                             <input 
                                 type="text"
                                 name="name" 
-                                class="inputbox" 
+                                className="inputbox" 
                                 onChange={handleChange}
                             />
                                 <p>Card Number</p>
                             <input 
                                 type="number"  
                                 name="number"
-                                class="inputbox" 
+                                className="inputbox" 
                                 id="card_number" 
                                 required
                                 onChange={handleChange}  
                             />
 
                             
-                            <div class="expcvv">
-                                <p class="expcvv_text">Expiry</p>
+                            <div className="expcvv">
+                                <p className="expcvv_text">Expiry</p>
                                 <input 
                                     type="date"
                                     name="expiry" 
-                                    class="inputbox" 
+                                    className="inputbox" 
                                     id="exp_date" 
                                     required
                                     onChange={handleChange}
                                 />
-                                    <p class="expcvv_text2">CVC</p>
+                                    <p className="expcvv_text2">CVC</p>
                                 <input 
                                     type="password" 
-                                    class="inputbox" 
+                                    className="inputbox" 
                                     name="cvc" 
                                     id="cvv" 
                                     required
                                     onChange={handleChange}
                                 />
                             </div>
-                            <button type="submit" class="checkout-button">CheckOut</button>
+                            <button type="submit" className="checkout-button">CheckOut</button>
                         </form>
                     </div>
                 </div>
             </div>
+            <Mpesa />
             <Footer />
         </>
     )
