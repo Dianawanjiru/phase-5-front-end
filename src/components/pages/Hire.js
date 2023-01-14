@@ -17,7 +17,7 @@ const Hire = () =>{
     return(
         <>
             <div className="testbox">
-                <form className='appointment-form' action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="POST">
+                <form className='booking-form' action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="POST">
                     <br/>
                     <h2> Booking Form </h2>
                     <p>Total: ${" "}{singleCarItem.price}</p>

@@ -1,6 +1,8 @@
 import './Mpesa.css';
 import { useParams } from 'react-router-dom';
 import carsData from '../../data/CarsData';
+import Navbar from '../../navbar/Navbar';
+import Footer from '../../footer/Footer';
 
 const Mpesa = () => {
 
@@ -9,6 +11,7 @@ const Mpesa = () => {
 
     return(
         <>
+            <Navbar />
             <div class="mainscreen">
                 <div class="payment-card">
                     <div class="leftside">
@@ -37,6 +40,7 @@ const Mpesa = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

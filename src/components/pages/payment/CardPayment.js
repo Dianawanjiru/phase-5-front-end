@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
 import { useState } from 'react';
-import Mpesa from './Mpesa';
 
 
 const Payment = () =>{
@@ -68,7 +67,7 @@ const Payment = () =>{
                             />
 
                             
-                            <div className="expcvv">
+                            <div className="expcvc">
                                 <p className="expcvv_text">Expiry</p>
                                 <input 
                                     type="date"
@@ -93,7 +92,6 @@ const Payment = () =>{
                     </div>
                 </div>
             </div>
-            <Mpesa />
             <Footer />
         </>
     )

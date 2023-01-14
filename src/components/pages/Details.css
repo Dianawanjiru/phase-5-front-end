@@ -1,22 +1,16 @@
 
 /* New Page */
 .title {
-	color: orange;
 	font-weight: 700;
 	font-size:30px;
-	/* padding-left: 30px; */
-	/* margin-left: 10px; */
-}
-
-.title span{
-	color: rgb(3, 250, 3);
-	
+	padding-left: 30px;
+	margin-left: 10px; 
+	color: #000;
 }
 
 .title > h2 {
 	text-align: center;
 	font-size: 30px;
-
 }
 
 
@@ -29,21 +23,10 @@ Make changes here if you want to modify both elements at the same time*/
 	margin-left: 20%;
 }
 
-.description {
-	margin-left: 20px;
-	color: orange;
-	font-size: 20px;
+.description p {
+	font-size: 22px;
 	font-weight: 300;
-}
-
-.desc{
-	font-size: 28px;
-	color: #fafafa;
-	font-weight: 700;
-}
-
-.desc span{
-	color: rgb(3, 250, 3);
+	color: #000;
 }
 
 .hint-star {
@@ -54,7 +37,7 @@ Make changes here if you want to modify both elements at the same time*/
 }
 
 .info ul{
-	color: orange;
+	color: #000;
 	display: inline-block;
 	justify-content: space-between;
 	

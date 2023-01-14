@@ -1,37 +1,30 @@
 
 /* Main Container */
-.testbox {
+.appointment {
     display: flex;
     justify-content: center;
     align-items: center;
     height: inherit;
     padding: 20px;
-    margin-bottom: 10%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    /* background: rgba(0, 0, 0, 0.6) url("https://images.pexels.com/photos/195632/pexels-photo-195632.jpeg?auto=compress&cs=tinysrgb&w=1600");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-blend-mode: darken;
+	background-attachment: fixed; */
 }
 
-.testbox, .appointment-form, .item, select, textarea, label { 
-    outline: none;
-    font-size: 14px;
-    color: #666;
-    line-height: 22px;
-}
 
-.banner > h1 {
+
+.banner h2 {
     position: absolute;
-    margin: 0;
     font-size: 40px;
-    color: orange;
     z-index: 2;
     line-height: 83px;
+    color: rgba(255, 166, 0, 0.825);
 }
 
-legend {
-    padding: 10px;      
-    font-size: 18px;
-    font-weight: 800;
-    color: orange;
-    background-color: #006622a0;
-}
 
 textarea {
     width: calc(100% - 12px);
@@ -43,14 +36,10 @@ textarea {
     max-width: 40%;
     padding: 20px;
     border-radius: 6px;
-    background-color: #000;;
-    box-shadow: 0 0 8px orange; 
 }
 
-.banner {
+.banner h2{
     position: relative;
-    height: 250px;
-    background-image: url("https://images.unsplash.com/photo-1615063029891-497bebd4f03c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8U1VWfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");  
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -58,29 +47,29 @@ textarea {
     text-align: center;
 }
 
-.banner::after {
-    content: "CA.R.ENTAL";
-    background-color: rgba(0, 0, 0, 0.4); 
-    position: absolute;
-    width: 100%;
-    height: 100%;
+/* Input fields */
+.item label{
+    color: #000;
 }
 
-/* Input fields */
-.item > label, p{
-    color: orange;
+.item .name-tags{
+    color: #000;
+    border-radius: 3px;
+}
+.name-tags{
+    font-size: 20px;
+    color: #000;
 }
 
 .item > input, select, textarea {
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-radius: 3px;
 }
 
 .item > input {
     width: calc(100% - 10px);
-    padding: 5px;
-    border: 2px solid orange;
+    padding: 50px;
 }
 input[type="date"] {
     padding: 4px 5px;
@@ -90,17 +79,11 @@ input[type="date"] {
     width: calc(100% - 12px);
     padding: 5px;
 }
-.item:hover p, .item:hover i, .item > label:hover, .question:hover p, .question label:hover, input:hover::placeholder {
-color:  #09f558;
-}
-.item input:hover, .item select:hover, .item textarea:hover {
-    border: 1px solid transparent;
-    box-shadow: 0 0 3px 0  #006622;
-    color: #006622;
-}
+
+
 .item {
     position: relative;
-    margin: 10px 0;
+
 }
 .item span {
     color: red;
@@ -113,29 +96,24 @@ color:  #09f558;
     font-size: 20px;
     color: #00b33c;
 }
-.item i {
-    right: 1%;
-    top: 30px;
-    z-index: 1;
-}
 
 .week {
     display:flex;
     justify-content:space-between;
 }
-.columns {
+.columns-appointment {
     display:flex;
     justify-content:space-between;
     flex-direction:row;
     flex-wrap:wrap;
 }
-.columns > div {
+.columns-appointment > div {
     width:48%;
 }
 [type="date"]::-webkit-calendar-picker-indicator {
     right: 1%;
     z-index: 2;
-    opacity: 0;
+    opacity: 4;
     cursor: pointer;
 }
 input[type=radio], input[type=checkbox]  {
@@ -153,41 +131,13 @@ label.radio {
 .question-answer label {
     display: block;
 }
-label.radio:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-}
-input[type=radio]:checked + label:before, label.radio:hover:before {
-    border: 2px solid  #006622;
-}
-label.radio:after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 5px;
-    width: 8px;
-    height: 4px;
-    border: 3px solid  #006622;
-    border-top: none;
-    border-right: none;
-    transform: rotate(-45deg);
-    opacity: 0;
-}
-input[type=radio]:checked + label:after {
-    opacity: 1;
-}
+
 
 .flax {
     display:flex;
     justify-content:space-around;
 }
-.btn-block {
-    margin-top: 10px;
+.btn-block {    
     text-align: center;
 }
 .btn-block > button {
