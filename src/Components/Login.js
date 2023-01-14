@@ -17,13 +17,13 @@ function Login({ onLogin }) {
               <>
                 <LoginForm onLogin={onLogin} />
 
-                {/* <p className='option'>
-                    Forgot Password? <Link to='/Forgot Password' id='passwordReset'>Reset</Link>
-                </p>  */}
+                <p className='option'>
+                    {/* ForgotPassword? <Link to='/ForgotPassword' id='passwordReset'>Reset</Link> */}
+                </p> 
 
                 
                 <p className='option'>
-                  Don't have an account? <a className='link' onClick={() => setShowLogin(false)}>Sign Up</a>
+                  Don't have an account? <a href='/signup' className='link' onClick={() => setShowLogin(false)}>Sign Up</a>
                 </p>
               </>
           )
