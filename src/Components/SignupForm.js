@@ -43,7 +43,7 @@ function SignUpForm({onLogin}) {
       return ( 
     
       <div> 
-        <div>
+        <div className='login-card'>
     <h3 className='header'>SIGN UP</h3>
           <div>
             <form  onSubmit={handleSubmit} method="post">
