@@ -1,8 +1,7 @@
 import { useEffect, useState,React } from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Login from './Components/Login';
-import ResetPasswordForm from './Components/PswdresetForm';
-import SignUpForm from './Components/SignupForm';
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -21,13 +20,7 @@ function App() {
 
   return (
 <>
-<Router>
-  <Routes>
-  <Route path='/' element={<Login/>}></Route>
-  <Route path='/ForgotPassword' element={<ResetPasswordForm/>}></Route>
-  <Route path='/signup' element={<SignUpForm/>}></Route>
-  </Routes>
-</Router>
+{/*routes goes here */}
 </>
 
   );
