@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './styles/style.css'
+import image from './images/carlogo.svg'
 
 const LoginForm = ({onLogin}) =>{ 
     const [username, setUsername] = useState("");
@@ -35,7 +36,7 @@ const LoginForm = ({onLogin}) =>{
         <div className='card'>
            <div className='card-body'>
     
-    <h3 className='header'>LOGIN</h3>
+    <h3 className='header'><img src={image} style={{width: "35px", height: "25px"}} />RANITE </h3>
             <form  onSubmit={handleSubmit}>
               <div className='form-group'>
      

@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 import './styles/style.css'
+import image from './images/carlogo.svg'
+
 
 
 function SignUpForm({onLogin}) {
@@ -44,7 +46,7 @@ function SignUpForm({onLogin}) {
     
       <div> 
         <div className='login-card'>
-    <h3 className='header'>SIGN UP</h3>
+    <h3 className='header'><img src={image} style={{width: "35px", height: "25px"}} />RANITE</h3>
           <div>
             <form  onSubmit={handleSubmit} method="post">
             <div className='form-group'>

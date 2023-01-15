@@ -8,8 +8,7 @@ function Login({ onLogin }) {
       <div className="container">
       <div>
     <div className='loginForm' >
-    <h1 className='logoName'>CA.R.ENTAL</h1>
-         {
+             {
           showLogin
           ? (
               <>
