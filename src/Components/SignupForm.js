@@ -6,7 +6,6 @@ function SignUpForm({onLogin}) {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
-    const [phonenumber, setPhonenumber] = useState("");
     const [password, setPassword] = useState("");
     const [password_confirmation, setConfirmPassword] = useState("");
     const [errors, setErrors] = useState([]);
@@ -61,12 +60,6 @@ function SignUpForm({onLogin}) {
               
                 <input id='fontinput'  type="email" placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
                 </div> 
-                <br/>
-
-                <div>
-              
-              <input id='fontinput'  type="text" placeholder='Enter Phone Number' onChange={(e) => setPhonenumber(e.target.value)} value={phonenumber} required name='phonenumber' className='form-control'/>
-              </div> 
                 <br/>
                 <div>
               
