@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
 
 *{
-background-color: black;
-color: #f5f5f5;
+/*Gray90 color.*/
+    background-color: white;;
+   
 
 }
 
 .logoName{
-    text-align: left;
+    text-align: center;
     color: orange;
     font-weight: 300;
     font-size: 1.45em;
@@ -28,7 +29,7 @@ color: #f5f5f5;
 #btn {
     border-radius: 4px;
     font-size: 18px;
-    padding: 2px 30px;
+    padding: 4px 70px;
     background-color: orange;
     border: none;
     color: black;
@@ -46,18 +47,19 @@ input{
 
 .option {
     font-size: 15px;
-    color: #f5f5f5;
+    /* color: #f5f5f5; */
 }
 
 
   .link{
     cursor: pointer;
+    border:2px ;
     color: orange;
  }
 
  .login-card{
-    box-shadow: 0 0 8px orange;
-    max-width: 400px;
+    box-shadow: 0 0 8px #19338f;
+    max-width: 200px;
     margin: 0 auto;
     position: relative;
     width: 100%;
@@ -65,7 +67,7 @@ input{
  }
 
  #passwordReset{
-    color: orange;
+    color: #D18700;
     cursor: pointer;
  }
 
