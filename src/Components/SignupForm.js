@@ -45,7 +45,7 @@ function SignUpForm({onLogin}) {
       return ( 
     
       <div> 
-        <div className='login-card'>
+        <div className='login-card'style ={{margin: "70px auto 0"}}>
     <h3 className='header'><img src={image} style={{width: "35px", height: "25px"}} />RANITE</h3>
           <div>
             <form  onSubmit={handleSubmit} method="post">
