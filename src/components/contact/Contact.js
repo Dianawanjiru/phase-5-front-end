@@ -29,7 +29,7 @@ const Contact = () => {
                         <input className='input1' placeholder="   NAME:" type="text" name="Name"  required="required"></input>
                         <input className='input1' placeholder="   EMAIL:" type="email" name="Email" tabindex="2"  required="required"></input>
                         <input className='input2' placeholder="   TYPE YOUR MESSAGE:" name="Message" tabindex="5"  required="required"></input>
-                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                            <button name="submit" type="submit" id="contact-submit">Submit</button>
                     </form>
                 </div>
            </div>
