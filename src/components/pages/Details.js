@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import React from 'react';
 import './Details.css';
 import carsData from '../data/CarsData';
-// import Payment from './Payment';
 import Hire from './Hire';
 import Footer from '../footer/Footer';
 import Navbar from '../navbar/Navbar';
@@ -52,7 +51,6 @@ const Details = () => {
                 </div>
 		    </div>
             <Hire />
-            {/* <Payment /> */}
             <Footer />
         </>
     )

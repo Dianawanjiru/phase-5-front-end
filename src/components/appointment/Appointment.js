@@ -13,40 +13,43 @@ function Appointment(){
     return(
         <Fragment>
             <Navbar />
-            <div className="testbox">
+            <div className="appointment">
                 <form className='appointment-form' onSubmit={handleSubmit}>
-                    <div className="banner">
-                        <h1>Appointment Form</h1>
+                    <div className="bannerr">
+                        <h2>Appointment Form</h2>
                     </div>
+                    <p>Our fleet consists of a wide range of Saloon’s, Mid SUVs, SUVs, Double Cabins, Vans and Buses. 
+                        <br />All our vehicles are maintained to exceptional standards and are regularly updated to the latest models.
+                        <br />Kindly fill the form below to book an appointment for a test drive
+                    </p>
                     <br/>
-                    <legend>Reservation Details</legend>
                     <div className="columns">
                         <div className="item">
-                            <label for="fname">First Name<span>*</span></label>
+                            <label for="fname" className='name-tags'>First Name<span>*</span></label>
                             <input id="fname" type="text" name="fname" />
                         </div>
                         <div className="item">
-                            <label for="lname"> Last Name<span>*</span></label>
+                            <label for="lname" className='name-tags'> Last Name<span>*</span></label>
                             <input id="lname" type="text" name="lname" />
                         </div>
                         <div className="item">
-                            <label for="address">Email Address<span>*</span></label>
+                            <label for="address" className='name-tags'>Email Address<span>*</span></label>
                             <input id="address" type="text"   name="address" />
                         </div>
                         <div className="item">
-                            <label for="zip">Phone Number<span>*</span></label>
+                            <label for="zip" className='name-tags'>Phone Number<span>*</span></label>
                             <input id="zip" type="text"   name="zip" required/>
                         </div>
                         <br/>
                     </div>
                     <div className="columns">
                         <div className="item">
-                            <label for="checkindate">Check-in Date <span>*</span></label>
+                            <label for="checkindate" className='name-tags'>Check-in Date <span>*</span></label>
                             <input id="checkindate" type="date" name="checkindate" />
                             <i className="fas fa-calendar-alt"></i>
                         </div>
                         <div className="item">
-                            <p>Check-in Time </p>
+                            <p className='name-tags'>Check-in Time </p>
                             <select>
                                 <option value="" disabled selected>Select time</option>
                                 <option value="1" >Morning</option>
@@ -55,7 +58,7 @@ function Appointment(){
                             </select>
                         </div>   
                         <div className="item">
-                            <p>Persons Capacity</p>
+                            <p className='name-tags'>Persons Capacity</p>
                             <select>
                                 <option value="8" disabled selected>Number of adults</option>
                                 <option value="1 person">1 Person</option>
@@ -67,8 +70,8 @@ function Appointment(){
                         </div>          
                     </div>
                     <div className="item">
-                        <label for="instruction">Any Additional Information</label>
-                        <textarea id="instruction" rows="3"></textarea>
+                        <label for="instruction" className='textarea-appointment'>Any Additional Information</label>
+                        <textarea id="instruction" rows="4"></textarea>
                     </div>
                     <div className="btn-block">
                         <button type="submit" href="/">Submit</button>

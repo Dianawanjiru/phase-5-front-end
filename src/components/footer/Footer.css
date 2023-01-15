@@ -1,14 +1,18 @@
 .footer{
     color: #fafafa;
-    background-color: #FD9D17;
+    background-color: #000d6b;
     padding: 10px 10px 20px 10px;
     min-width:100%;
+}
+
+ul{
+    list-style: none;
 }
 
 .footer .main-footer{
     font-weight: 800;
     font-size: larger;
-    color: #000;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -20,7 +24,7 @@
 }
 
 .copyright{
-    color: #000;
+    color: white;
     margin-left: 5%;
 }
 

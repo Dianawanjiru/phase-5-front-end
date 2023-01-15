@@ -11,7 +11,6 @@
   color: #FFF;
   font-family: Roboto;
   font-weight: 300;
-  color: orange;
 }
 .message-box h1 {
   font-size: 60px;
@@ -25,7 +24,7 @@
   margin-top: 40px;
 }
 .buttons-con .action-link-wrap a, button {
-  background: #30da057d;
+  background: #09279e;
   padding: 14px 25px;
   border: none;
   border-radius: 4px;
@@ -46,7 +45,7 @@
 
 .error-container {
   animation: scroll 70s linear infinite;
-  background: rgba(0, 0, 0, 0.8)url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  background: rgba(0, 0, 0, 0.5)url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
   background-blend-mode: darken;
   color: #eee;
   height: 100vh;
