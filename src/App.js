@@ -1,6 +1,7 @@
 import { useEffect, useState,React } from 'react';
-// import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {  Routes, Route} from 'react-router-dom';
 import Login from './Components/Login';
+import home from './Components/Pages/home';
 
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
   return (
 <>
 {/*routes goes here */}
+<Routes>
+  <Route path='/' element={ <home /> }/>
+</Routes>
 </>
 
   );
