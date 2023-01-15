@@ -20,7 +20,7 @@ function CarListing(){
 
                 setTimeout(() =>{
                     setLoading(false)
-                }, 2000)
+                }, 1000)
                 setCars(response)
                 
             });
@@ -39,13 +39,13 @@ function CarListing(){
               <PacmanLoader
                     color={"orange"}
                     loading={loading}
-                    size={100}
+                    size={70}
                     aria-label="Loading Spinner"
                     data-testid="loader"
                     display="flex"
                     justify-content="center"
                     align-items="center"
-                    margin-left="200px"
+                    margin-left="2000px"
             />
                 :
 
