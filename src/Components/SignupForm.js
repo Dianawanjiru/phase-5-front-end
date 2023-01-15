@@ -42,13 +42,13 @@ function SignUpForm({onLogin}) {
       }
       return ( 
     
-      <div className="login-card"> 
-        <div className='card'>
+      <div> 
+        <div>
     <h3 className='header'>SIGN UP</h3>
-          <div className='card-body'>
+          <div>
             <form  onSubmit={handleSubmit} method="post">
             <div className='form-group'>
-               <input id='fontinput'  type="text" placeholder='Full Name' onChange={(e) => setName(e.target.value)} value={name} id='name' required className='form-control' />
+               <input type="text" placeholder='Full Name' onChange={(e) => setName(e.target.value)} value={name} id='name' required className='form-control' />
               </div>
               <br/>
               <div className='form-group'>
@@ -58,17 +58,17 @@ function SignUpForm({onLogin}) {
               <br/>
                 <div className='form-group'>
               
-                <input id='fontinput'  type="email" placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
+                <input   type="email" placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
                 </div> 
                 <br/>
                 <div>
               
-                <input id='fontinput'  type="password" placeholder='Enter Password' required name='password' onChange={(e) => setPassword(e.target.value)} value={password} className='form-control' />
+                <input   type="password" placeholder='Enter Password' required name='password' onChange={(e) => setPassword(e.target.value)} value={password} className='form-control' />
                 </div> 
                 <br/>
                 <div>
                
-                <input id='fontinput'  type="password" placeholder='Confirm Paasword' onChange={(e) => setConfirmPassword(e.target.password_confirmation)} value={password_confirmation} id='confirmPassword' required className='form-control' />
+                <input   type="password" placeholder='Confirm Paasword' onChange={(e) => setConfirmPassword(e.target.password_confirmation)} value={password_confirmation} id='confirmPassword' required className='form-control' />
                 </div>
 
 
@@ -78,11 +78,11 @@ function SignUpForm({onLogin}) {
                 </div> 
             </form> 
                      {errors?.map((err) => (
-             <div className='alert alert-danger rounded-0'key={err}>{err}</div>
+             <div className='erro-alert'key={err}>{err}</div>
             ))}
     
              {success?.map((msg) => (
-             <div className='alert alert-success rounded-0'key={msg}>{msg}</div>
+             <div className='success-alert'key={msg}>{msg}</div>
             ))}
                
           </div>
