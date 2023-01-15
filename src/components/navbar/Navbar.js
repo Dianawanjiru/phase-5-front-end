@@ -21,7 +21,6 @@ function Navbar() {
                                 <NavLink to='/services/appointment'>Appointment</NavLink>
                 </div>
               <NavLink to ='/contacts'>CONTACT</NavLink> 
-              <button className='logout'>Log out</button>         
             </div>
         </div>
         <div className='rightSide'>
@@ -33,7 +32,7 @@ function Navbar() {
               <NavLink to='/services/appointment'>Appointment</NavLink>
             </div>
           <NavLink to ='/contacts'>CONTACT</NavLink>
-          <button className='logout'>Log out</button>
+          {/* <button className='logout'>Log out</button> */}
           <button onClick={() => setOpenLinks(!openLinks)}>
             <ReorderIcon />
           </button>

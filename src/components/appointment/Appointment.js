@@ -70,7 +70,7 @@ function Appointment(){
                         </div>          
                     </div>
                     <div className="item">
-                        <label for="instruction" className='textarea'>Any Additional Information</label>
+                        <label for="instruction" className='textarea-appointment'>Any Additional Information</label>
                         <textarea id="instruction" rows="4"></textarea>
                     </div>
                     <div className="btn-block">

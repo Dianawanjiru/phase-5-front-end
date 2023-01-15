@@ -1,6 +1,4 @@
-import React from "react";
 import { useEffect, useState  } from "react";
-import Footer from "../footer/Footer";
 import CarItem from "./CarItem";
 import './Cars.css';
 import PacmanLoader from "react-spinners/PacmanLoader";
@@ -33,7 +31,6 @@ function CarListing(){
         <main>
             <Navbar />
             <h1 className="hire-cars-header">Our Cars</h1>
-
              {
                 loading ? 
               <PacmanLoader
@@ -54,10 +51,10 @@ function CarListing(){
                     {cars.map((car) => ( <CarItem key={car.id} car={car} 
                 /> ))} 
                 </div>
-                <Footer />
             </div>
              }
         </main>
+
     )
 }
 

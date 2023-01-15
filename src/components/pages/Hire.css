@@ -69,25 +69,17 @@ input[type="date"] {
 .item {
     position: relative;
     margin: 10px 0;
+    color: azure;
+}
+
+.item label{
+    color: #fafafa;
 }
 
 .item span {
-    color: red;
-}
-.item > input[type="date"]::-webkit-inner-spin-button {
-    display: none;
-}
-.item i, input[type="date"]::-webkit-calendar-picker-indicator {
-    position: absolute;
-    font-size: 20px;
-    color: #00b33c;
+    color: rgb(253, 253, 253);
 }
 
-
-.week {
-    display:flex;
-    justify-content:space-between;
-}
 .columns {
     display:flex;
     justify-content:space-between;
@@ -97,58 +89,18 @@ input[type="date"] {
 .columns > div {
     width:48%;
 }
-[type="date"]::-webkit-calendar-picker-indicator {
-    right: 1%;
-    z-index: 2;
-    opacity: 0;
-    cursor: pointer;
-}
-input[type=radio], input[type=checkbox]  {
-    display: none;
-}
+
 label.radio {
     position: relative;
     display: inline-block;
     margin: 5px 20px 15px 0;
     cursor: pointer;
 }
-.question span {
-    margin-left: 30px;
-}
+
 .question-answer label {
     display: block;
 }
-label.radio:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-}
 
-label.radio:after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 5px;
-    width: 8px;
-    height: 4px;
-    border: 3px solid  #006622;
-    border-top: none;
-    border-right: none;
-    transform: rotate(-45deg);
-    opacity: 0;
-}
-input[type=radio]:checked + label:after {
-    opacity: 1;
-}
-
-.flax {
-    display:flex;
-    justify-content:space-around;
-}
 .btn-block {
     text-align: center;
 }
