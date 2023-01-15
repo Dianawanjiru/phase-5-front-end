@@ -17,26 +17,22 @@ function Login({ onLogin }) {
               <>
                 <LoginForm onLogin={onLogin} />
 
+              
                 <p className='option'>
-                    {/* ForgotPassword? <Link to='/ForgotPassword' id='passwordReset'>Reset</Link> */}
-                </p> 
-
-                
-                <p className='option'>
-                  Don't have an account? <a href='/signup' className='link' onClick={() => setShowLogin(false)}>Sign Up</a>
+                  Don't have an account? <button className='link' onClick={() => setShowLogin(false)}>Sign Up</button>
                 </p>
               </>
           )
           : (
               <>
-            {/* <ResetPasswordForm onLogin={onLogin}/> */}
+      
                 <SignUpForm onLogin={onLogin} />
-                <br />
+                <div>
                 <p className='option'>
                   Already have an account?
-                  <a className='link' onClick={() => setShowLogin(true)}>Log In</a>
+                  <button className='link' onClick={() => setShowLogin(true)}>Log In</button>
                 </p>
-         
+              </div>
               </>
              
           )
