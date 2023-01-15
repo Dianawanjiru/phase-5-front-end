@@ -10,9 +10,7 @@ function Navbar() {
     <div className='navbar'>
         <div className='leftSide' id = {openLinks? "open": "close"}>
             <h1 className='logo'>
-                    <a href='/'>
-                        CA.R.ENTAL
-                    </a>
+                  CA.R.ENTAL
             </h1>
             <div className = 'hiddenLinks'>
               <NavLink to= '/'>HOME</NavLink>

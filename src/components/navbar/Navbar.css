@@ -9,11 +9,11 @@
     position: relative;
   }
 
-  .logo a{
-    font-weight: 300;
+  .logo{
+    font-weight: 400;
     text-decoration: none;
-	  font-size: 1.2em;
-    color: #FD9D17;
+	  font-size: 2.0em;
+    color: #fd9d17e8;
     font-family: 'Faster One', cursive;
 }
   
@@ -53,17 +53,12 @@
 
 
 
-  .main-nav a:hover {
-	color: #FD9D17;
-  transform: translateY(-6px);
-  transition: 0.3s ease-out;
-}
 
-.navbar a:hover {
+/* .navbar a:hover {
 	color: #FD9D17;
     transform: translateY(-6px);
     transition: 0.3s ease-out;
-}
+} */
 
 
 .btn-1{
@@ -85,7 +80,7 @@
 .submenu{
   display: none;
   position: relative;
-  min-width: 160px;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 50;
 }
@@ -93,7 +88,7 @@
 .submenu a{
   font-size: 14px;
   display: block;
-  left: 100%;
+  left: 10%;
   top: 0;
   width: 100px;
 }
