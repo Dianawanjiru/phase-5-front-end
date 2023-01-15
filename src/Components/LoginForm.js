@@ -40,7 +40,7 @@ const LoginForm = ({onLogin}) =>{
             <form  onSubmit={handleSubmit}>
               <div className='form-group'>
      
-                <input  type="email" id='email' placeholder='Enter Email Address' onChange={(e) => setUsername(e.target.value)}   required className='form-control' />
+                <input  type="username" id='username' placeholder='Enter Username' onChange={(e) => setUsername(e.target.value)}   required className='form-control' />
              </div>   
              <br/>
                  <div className='form-group'>
