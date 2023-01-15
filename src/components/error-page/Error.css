@@ -11,7 +11,6 @@
   color: #FFF;
   font-family: Roboto;
   font-weight: 300;
-  color: orange;
 }
 .message-box h1 {
   font-size: 60px;
@@ -25,7 +24,7 @@
   margin-top: 40px;
 }
 .buttons-con .action-link-wrap a, button {
-  background: #30da057d;
+  background: #09279e;
   padding: 14px 25px;
   border: none;
   border-radius: 4px;
