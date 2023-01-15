@@ -17,12 +17,9 @@
 
 
 
-.banner h2 {
-    position: absolute;
+.bannerr h2 {
     font-size: 40px;
-    z-index: 2;
-    line-height: 83px;
-    color: rgba(255, 166, 0, 0.825);
+    color: rgba(255, 166, 0, 0.88);
 }
 
 
@@ -38,7 +35,7 @@ textarea {
     border-radius: 6px;
 }
 
-.banner h2{
+.bannerr h2{
     position: relative;
     background-size: cover;
     display: flex;

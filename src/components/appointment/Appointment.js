@@ -15,7 +15,7 @@ function Appointment(){
             <Navbar />
             <div className="appointment">
                 <form className='appointment-form' onSubmit={handleSubmit}>
-                    <div className="banner">
+                    <div className="bannerr">
                         <h2>Appointment Form</h2>
                     </div>
                     <p>Our fleet consists of a wide range of Saloon’s, Mid SUVs, SUVs, Double Cabins, Vans and Buses. 
