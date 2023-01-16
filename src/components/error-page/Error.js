@@ -14,7 +14,7 @@ function Error(){
                             <a>
                                 <button onClick={() => navigate(-1)} className="link-button">Go Back</button>
                             </a>
-                            <Link to ="/" className="link-button">
+                            <Link to ="/home" className="link-button">
                                 <button>
                                     Go HomePage
                                 </button>
