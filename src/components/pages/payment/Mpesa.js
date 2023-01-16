@@ -17,7 +17,7 @@ const Mpesa = () => {
                 <div class="payment-card">
                     <div class="leftside">
                         <div className='product'>
-                            <img src='https://play-lh.googleusercontent.com/bRZF74-13jknePwUd1xam5ZCSdAJVuI_wqtkrisBgu7EEh1jobh2boZihlk-4ikY_S3V' style={{width: "280px"} } alt="lipa-na-mpesa"/>
+                            <img src='https://play-lh.googleusercontent.com/bRZF74-13jknePwUd1xam5ZCSdAJVuI_wqtkrisBgu7EEh1jobh2boZihlk-4ikY_S3V' style={{width: "300px"} } alt="lipa-na-mpesa"/>
                         </div>
                     </div>
                     <div class="rightside">
