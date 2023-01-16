@@ -1,6 +1,7 @@
 import React, { useState }from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css'
+import './Navbar.css';
+import carlogo from './icons/carlogo.svg';
 import ReorderIcon from '@material-ui/icons/Reorder';
 
 function Navbar() {
@@ -9,6 +10,7 @@ function Navbar() {
   return (
     <div className='navbar'>
         <div className='leftSide' id = {openLinks? "open": "close"}>
+        <img src= {carlogo} alt ="pizza logo" style={{height:'40px', width:'50px', backgroundColor:'orange'}}/>
             <h1 className='logo'>
                   CA.R.ENTAL
             </h1>
