@@ -1,6 +1,7 @@
 import './Hire.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import carsData from '../data/CarsData';
+
 
 
 const Hire = () =>{
@@ -16,7 +17,7 @@ const Hire = () =>{
     return(
         <>
             <div className="testbox">
-                <form className='appointment-form' action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="post" onSubmit={handleSubmit} >
+                <form className='booking-form' action="https://app.headlessforms.cloud/api/v1/form-submission/4Ra8v1A1ij" method="POST">
                     <br/>
                     <h2> Booking Form </h2>
                     <p>Total: ${" "}{singleCarItem.price}</p>
@@ -98,7 +99,15 @@ const Hire = () =>{
                         <textarea id="instruction" rows="3"></textarea>
                     </div>
                     <div className="btn-block">
-                        <button type="submit" href="/">Submit</button>
+                    <button type="submit" href={`/cars/${singleCarItem.make}/payment`} >
+                            <Link to={`/cars/${singleCarItem.make}/payment`}>
+                                <a href={`/cars/${singleCarItem.make}/payment`} >
+                                    Submit
+                                </a>
+                            </Link>
+                        </button>
+                            
+                        
                     </div>
                 </form>
             </div>

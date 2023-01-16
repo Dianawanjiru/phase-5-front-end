@@ -1,43 +1,48 @@
-import React from 'react';
-import './Navbar.css';
+import React, { useState }from 'react';
 import { NavLink } from 'react-router-dom';
+import './Navbar.css';
+import carlogo from './icons/carlogo.svg';
+import ReorderIcon from '@material-ui/icons/Reorder';
 
+function Navbar() {
+  const [openLinks, setOpenLinks] = useState(false)
 
-function Navbar(){
-    return(
-        <nav className='header'>
+  return (
+    <div className='navbar'>
+        <div className='leftSide' id = {openLinks? "open": "close"}>
+        <img src= {carlogo} alt ="pizza logo" style={{height:'40px', width:'50px', backgroundColor:'orange'}}/>
             <h1 className='logo'>
-                <a href='/'>
-                    CA.R.ENTAL
-                </a>
+                  CA.R.ENTAL
             </h1>
-            <ul className='main-nav'>
-                <li>
-                    <NavLink to='/'>HOME</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/about'>ABOUT</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/services'>SERVICES</NavLink>
-                    <ul className='submenu'>
-                        <li>
-                            <NavLink to='/services/hire'>Hire</NavLink>
-                            <NavLink to='/services/appointment'>appointment</NavLink>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <NavLink to='/contacts'>CONTACT</NavLink>
-                </li>
-                <li>
-                    <button className='logout'>
-                        Log out
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    )
+            <div className = 'hiddenLinks'>
+              <NavLink to= '/'>HOME</NavLink>
+              <NavLink to = '/about'>ABOUT</NavLink>
+              <NavLink to='/services' className="disabled-link">SERVICES</NavLink>
+                <div className='submenu'>
+                                <NavLink to='/services/hire'>Hire</NavLink>
+                                <NavLink to='/services/appointment'>Appointment</NavLink>
+                </div>
+              <NavLink to ='/contacts'>CONTACT</NavLink> 
+            </div>
+        </div>
+        <div className='rightSide'>
+          <NavLink to= '/'>HOME</NavLink>
+          <NavLink to = '/about'>ABOUT</NavLink>
+          <NavLink to='/services' className="disabled-link">SERVICES</NavLink>
+            <div className='submenu'>
+              <NavLink to='/services/hire'>Hire</NavLink>
+              <NavLink to='/services/appointment'>Appointment</NavLink>
+            </div>
+          <NavLink to ='/contacts'>CONTACT</NavLink>
+          {/* <button className='logout'>Log out</button> */}
+          <button onClick={() => setOpenLinks(!openLinks)}>
+            <ReorderIcon />
+          </button>
+          
+        </div>
+
+    </div>
+  )
 }
 
 export default Navbar;

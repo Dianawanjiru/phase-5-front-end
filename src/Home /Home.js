@@ -14,9 +14,12 @@ import Testimonial from "../mycomponents/UI/Testimonial";
 
 //import BlogList from "../components/UI/BlogList";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
 
 const Home = () => {
   return (
+    <>
+    <Navbar/>
     <Helmet title="Home">
       {/* ============= hero section =========== */}
       <section className="p-0 hero__slider-section">
@@ -100,6 +103,7 @@ const Home = () => {
       </section> */}
       <Footer/>
     </Helmet>
+    </>
     
   );
 };

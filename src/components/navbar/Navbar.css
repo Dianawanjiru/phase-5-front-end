@@ -1,64 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
 
-/* * {
-    margin: 0;
-    padding: 0;
-} */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #000d6b;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
 
-.header {
-	padding-top: .9em;
-	padding-bottom: .5em;
-	background-color: #000000;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0 0 3px orange; 
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.logo a{
-    color: #FD9D17;
-    font-weight: 300;
+  .logo{
+    font-weight: 400;
     text-decoration: none;
-	font-size: 1.45em;
+	  font-size: 2.0em;
+    color: #fd9d17e8;
     font-family: 'Faster One', cursive;
 }
-
-.main-nav {
-	margin-top: 5px;
-    color: #0e2338;
-	font-size: .99em;
-}
-
-.logo a,
-.main-nav a {
-    margin-top: 15px;
-	padding: 10px 18px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
+  
+  .navbar .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+  }
+  
+  
+  .navbar .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: white;
     text-decoration: none;
-    list-style-type: none;
-}
+    margin: 20px;
+  }
+  
+  .navbar .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar .rightSide svg {
+    font-size: 40px;
+  }
 
-ul{
-    list-style: none;
-}
 
-.main-nav a {
-    color: #fafafa;
-    font-family: 'Faster one';
-    font-weight: 500;
-    font-size: 1.7em;
-}
 
-.main-nav a:hover {
+
+/* .navbar a:hover {
 	color: #FD9D17;
     transform: translateY(-6px);
     transition: 0.3s ease-out;
-}
+} */
 
 
 .btn-1{
@@ -72,68 +72,93 @@ ul{
     border-radius: 6px;
 }
 
-.submenu{
-    font-size: 10px;
-    color: #fafafa;
-    background-color: #000000;
-    left: 100%;
-    top: 0;
-    width: 100px;
-    display: none;
+.disabled-link {
+    pointer-events: none;
 }
 
-.main-nav li:hover > .submenu{
-    width: 100px;
+
+.submenu{
+  display: none;
+  position: relative;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 50;
+}
+
+.submenu a{
+  font-size: 14px;
+  display: block;
+  left: 10%;
+  top: 0;
+  width: 100px;
+}
+
+.navbar:hover .submenu{
+    width: 10px;
     display: block;
 }
 
-.logout{
-    padding: 6px;
-    background-color: orange;
-    border: none;
-    border-radius: 8px;
-    margin-left: 135px;
-    font-weight: 800;
-}
+  
+  .navbar #open {
+    padding-left: 0px;
+  }
+  .navbar #open img {
+    display: none;
+  }
+  
+  .navbar #close img {
+    display: inherit;
+  }
+  
+  .navbar #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+  }
+  
+  .navbar #close .hiddenLinks {
+    display: none;
+  }
+  
+  .navbar #open a {
+    width: 70px;
+    margin: 5px;
+  }
 
-/* ================================= 
-  Media Queries
-==================================== */
 
-@media (min-width: 822px) {
-	.header,
-	.main-nav {
-		display: flex;
-	}
-	.header {
-		flex-direction: column;
-		align-items: center;
+
+
+  /* Media Queries */
+  
+  @media only screen and (max-width: 900px) {
+    .navbar .rightSide a {
+      width: 70px;
     }
-    	.header{
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
-	}
-    .logout{
-        padding: 6px;
-        background-color: orange;
-        border: none;
-        border-radius: 8px;
-        margin: 25px auto;
+    .navbar .leftSide {
+      padding-left: 50px;
     }
-
-}
-
-@media (min-width: 1269px) {
-	.header {
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-    .logout{
-        padding: 6px;
-        background-color: orange;
-        border: none;
-        border-radius: 8px;
-        margin: 25px auto;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .navbar .rightSide a {
+      display: none;
     }
-}
+  
+    .navbar .rightSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .navbar .rightSide button {
+      display: inherit;
+    }
+  }
+  
+  @media only screen and (min-width: 700px) {
+    .navbar .rightSide button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  }

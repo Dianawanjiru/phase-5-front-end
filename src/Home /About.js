@@ -10,9 +10,15 @@ import driveImg from "../assets/all-images/drive.jpg";
 import OurMembers from "../mycomponents/UI/OurMembers";
 import "../mystyles/about.css";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
+
+
 
 const About = () => {
   return (
+    <>
+    <Navbar/>
+    
     <Helmet title="About">
       <CommonSection title="About Us" />
       <AboutSection aboutClass="aboutPage" />
@@ -53,7 +59,7 @@ const About = () => {
 
                   <div>
                     <h6 className="section__subtitle">Need Any Help?</h6>
-                    <h4>+00123456789</h4>
+                    <h4>+97654598765</h4>
                   </div>
                 </div>
               </div>
@@ -77,6 +83,7 @@ const About = () => {
       </section> 
       <Footer/>
     </Helmet>
+    </>
   );
 };
 

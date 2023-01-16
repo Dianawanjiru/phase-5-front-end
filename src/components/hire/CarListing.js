@@ -1,9 +1,8 @@
-import React from "react";
 import { useEffect, useState  } from "react";
-import Footer from "../footer/Footer";
 import CarItem from "./CarItem";
 import './Cars.css';
 import PacmanLoader from "react-spinners/PacmanLoader";
+import Navbar from "../navbar/Navbar";
 
 
 function CarListing(){
@@ -19,7 +18,7 @@ function CarListing(){
 
                 setTimeout(() =>{
                     setLoading(false)
-                }, 2000)
+                }, 1000)
                 setCars(response)
                 
             });
@@ -30,20 +29,20 @@ function CarListing(){
 
     return(
         <main>
+            <Navbar />
             <h1 className="hire-cars-header">Our Cars</h1>
-
              {
                 loading ? 
               <PacmanLoader
                     color={"orange"}
                     loading={loading}
-                    size={100}
+                    size={70}
                     aria-label="Loading Spinner"
                     data-testid="loader"
                     display="flex"
                     justify-content="center"
                     align-items="center"
-                    margin-left="200px"
+                    margin-left="2000px"
             />
                 :
 
@@ -52,10 +51,10 @@ function CarListing(){
                     {cars.map((car) => ( <CarItem key={car.id} car={car} 
                 /> ))} 
                 </div>
-                <Footer />
             </div>
              }
         </main>
+
     )
 }
 
