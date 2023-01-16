@@ -10,12 +10,16 @@ import Payment from './components/pages/payment/CardPayment';
 import AllPayment from './components/pages/payment/AllPayments';
 import Mpesa from './components/pages/payment/Mpesa';
 
+import Home from './Home /Home';
+import About from './Home /About';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/about' element={<About/>}></Route>
           <Route path='/contacts' element={<Contact/>}></Route>
           <Route path='/services/appointment' element={<Appointment />}></Route>
           <Route path='/services/hire' element={<CarListing />}/>
