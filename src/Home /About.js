@@ -39,17 +39,18 @@ const About = () => {
                 </h2>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                At our car rental company, we are dedicated to providing our 
+                customers with safe and reliable transportation solutions. We understand the importance 
+                of safety on the road and take it very seriously. That's why we regularly maintain and 
+                service our vehicles to ensure they are in top condition. Our team is also available 24/7 to answer any questions or concerns 
+                you may have. We are committed to ensuring a safe and enjoyable ride for all our customers
                 </p>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                In addition to regular maintenance and service, we also have strict cleaning protocols in place to ensure that all our vehicles 
+                are thoroughly sanitized before and after each rental. Our team takes extra care to clean and disinfect high-touch 
+                areas such as door handles, steering wheels and seats. We also provide our customers with hand sanitizers 
+                and face masks if needed.
                 </p>
 
                 <div className=" d-flex align-items-center gap-3 mt-4">
