@@ -1,5 +1,5 @@
 import './Error.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Error(){
     const navigate = useNavigate();
@@ -14,11 +14,11 @@ function Error(){
                             <a>
                                 <button onClick={() => navigate(-1)} className="link-button">Go Back</button>
                             </a>
-                            <a href="/home" className="link-button">
+                            <Link to ="/" className="link-button">
                                 <button>
                                     Go HomePage
                                 </button>
-                            </a>
+                            </Link>
                     </div>
                 </div>
             </div>
