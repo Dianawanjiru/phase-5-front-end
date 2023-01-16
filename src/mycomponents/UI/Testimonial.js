@@ -42,10 +42,10 @@ const Testimonial = () => {
     <Slider {...settings}>
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        I recently rented a car from this website 
+        for my business trip and I was extremely impressed with the service. The car was in great condition and the process of booking and picking
+         up the car was seamless. 
+        I would highly recommend this website to anyone in need of a rental car.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
@@ -60,10 +60,10 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        I recently rented a car from this website 
+        for my business trip and I was extremely impressed with the service. The car was in great condition and the process of booking and picking
+         up the car was seamless. 
+        I would highly recommend this website to anyone in need of a rental car.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
@@ -78,10 +78,10 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        I recently rented a car from this website 
+        for my business trip and I was extremely impressed with the service. The car was in great condition and the process of booking and picking
+         up the car was seamless. 
+        I would highly recommend this website to anyone in need of a rental car.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
@@ -96,10 +96,10 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        I recently rented a car from this website 
+        for my business trip and I was extremely impressed with the service. The car was in great condition and the process of booking and picking
+         up the car was seamless. 
+        I would highly recommend this website to anyone in need of a rental car.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
