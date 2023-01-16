@@ -53,10 +53,11 @@ input{
 }
 
 
-  .link{
+  .link-options{
     cursor: pointer;
     border:2px ;
     color: orange;
+    padding:10px;
  }
 
  .login-card{
