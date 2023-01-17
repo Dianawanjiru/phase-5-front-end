@@ -25,8 +25,6 @@ function CarListing(){
 },[]);
 
 // console.log(cars)
-
-
     return(
         <main>
             <Navbar />
