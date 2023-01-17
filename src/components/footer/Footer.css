@@ -9,6 +9,8 @@ ul{
     list-style: none;
 }
 
+
+
 .footer .main-footer{
     font-weight: 800;
     font-size: larger;
@@ -21,6 +23,15 @@ ul{
 .f-submenu{
     font-size: medium;
     font-weight: 400;
+}
+
+.f-submenu a{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.f-submenu a:hover{
+    color: orange;
 }
 
 .copyright{

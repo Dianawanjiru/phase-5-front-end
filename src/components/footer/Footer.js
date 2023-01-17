@@ -6,6 +6,7 @@ import mail from './icons/mail.svg';
 import locale from './icons/map-pin.svg';
 import phone from './icons/phone.svg';
 import tweet from './icons/twitter.svg';
+import { Link } from "react-router-dom";
 
 const Footer = ()=> {
     return (
@@ -15,15 +16,25 @@ const Footer = ()=> {
                     <li>
                         Company
                         <ul className='f-submenu'>
-                            <li>About</li>
-                            <li>Contact</li>
+                            <Link to='/about'>
+                                <li>About</li>
+                            </Link>
+                            <Link to='/contacts'>
+                                <li>Contact</li>
+                            </Link>
                         </ul>
                     </li>
                     <li>
                         Services
                         <ul className="f-submenu">
-                            <li>Hire</li>
-                            <li>Appointment</li>
+                            <Link to='/services/hire'>
+                                <li>
+                                    Hire
+                                </li>
+                            </Link>
+                            <Link to='/services/appointment'>
+                                <li>Appointment</li>
+                            </Link>
                         </ul>
                     </li>
                     <li>
