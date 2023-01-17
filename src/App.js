@@ -1,5 +1,6 @@
 import './App.css';
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import Login from './Components/Login'
 import Contact from './components/contact/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Appointment from './components/appointment/Appointment';
@@ -14,6 +15,20 @@ import Home from './Home /Home';
 import About from './Home /About';
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+
+  if (!user) return <Login onLogin={setUser} />;
+
   return (
     <div className="App">
       <Router>
