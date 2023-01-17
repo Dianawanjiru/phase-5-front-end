@@ -13,6 +13,8 @@ import Mpesa from './components/pages/payment/Mpesa';
 
 import Home from './Home /Home';
 import About from './Home /About';
+import Blog from './Home /Blog';
+import BlogDetails from './Home /BlogDetails';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -35,6 +37,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
+          <Route path='/blogs' element={<Blog/>}></Route>
+          <Route path='/blogs/:slug' element={<BlogDetails/>}></Route>
           <Route path='/contacts' element={<Contact/>}></Route>
           <Route path='/services/appointment' element={<Appointment />}></Route>
           <Route path='/services/hire' element={<CarListing />}/>
