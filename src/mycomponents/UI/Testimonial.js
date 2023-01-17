@@ -3,10 +3,10 @@ import Slider from "react-slick";
 
 import "../../mystyles/testimonial.css";
 
-import ava01 from "../../assets/all-images/ava-1.jpg";
-import ava02 from "../../assets/all-images/ava-2.jpg";
-import ava03 from "../../assets/all-images/ava-3.jpg";
-import ava04 from "../../assets/all-images/ava-4.jpg";
+import ava01 from "../../assets/all-images/test1.jpg";
+import ava02 from "../../assets/all-images/test2.jpg";
+import ava03 from "../../assets/all-images/test3.jpg";
+import ava04 from "../../assets/all-images/test4.jpg";
 
 const Testimonial = () => {
   const settings = {
@@ -52,7 +52,7 @@ const Testimonial = () => {
           <img src={ava01} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Jhon Doe</h6>
+            <h6 className="mb-0 mt-3">Myles John</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Testimonial = () => {
           <img src={ava02} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Jhon Doe</h6>
+            <h6 className="mb-0 mt-3">Kim Kim</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -88,7 +88,7 @@ const Testimonial = () => {
           <img src={ava03} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Jhon Doe</h6>
+            <h6 className="mb-0 mt-3">Lilani Zuri</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -106,7 +106,7 @@ const Testimonial = () => {
           <img src={ava04} alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Jhon Doe</h6>
+            <h6 className="mb-0 mt-3">Mercy Laimani</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>

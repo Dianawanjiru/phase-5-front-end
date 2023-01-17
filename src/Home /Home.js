@@ -12,7 +12,7 @@ import ServicesList from "../mycomponents/UI/ServicesList";
 //import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../mycomponents/UI/Testimonial";
 
-//import BlogList from "../components/UI/BlogList";
+import BlogList from "../mycomponents/UI/BlogList";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 
@@ -89,7 +89,7 @@ const Home = () => {
       </section>
 
       {/* =============== blog section =========== */}
-      {/* <section>
+       <section>
         <Container>
           <Row>
             <Col lg="12" className="mb-5 text-center">
@@ -99,8 +99,8 @@ const Home = () => {
 
             <BlogList />
           </Row>
-        </Container/>
-      </section> */}
+        </Container>
+      </section> 
       <Footer/>
     </Helmet>
     </>

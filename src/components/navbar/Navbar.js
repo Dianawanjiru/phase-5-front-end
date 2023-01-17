@@ -17,6 +17,7 @@ function Navbar() {
             <div className = 'hiddenLinks'>
               <NavLink to= '/'>HOME</NavLink>
               <NavLink to = '/about'>ABOUT</NavLink>
+              <NavLink to = '/blogs'>BlOG</NavLink>
               <NavLink to='/services' className="disabled-link">SERVICES</NavLink>
                 <div className='submenu'>
                                 <NavLink to='/services/hire'>Hire</NavLink>
@@ -28,6 +29,8 @@ function Navbar() {
         <div className='rightSide'>
           <NavLink to= '/'>HOME</NavLink>
           <NavLink to = '/about'>ABOUT</NavLink>
+          <NavLink to = '/blogs'>BLOG</NavLink>
+          
           <NavLink to='/services' className="disabled-link">SERVICES</NavLink>
             <div className='submenu'>
               <NavLink to='/services/hire'>Hire</NavLink>
