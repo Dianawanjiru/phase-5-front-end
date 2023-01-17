@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import ava01 from "../../assets/all-images/Lin.jpeg";
 import ava02 from "../../assets/all-images/Derick.jpeg";
 import ava03 from "../../assets/all-images/Stephen.jpeg";
-import ava04 from "../../assets/all-images/Dee.jpeg"
+import ava04 from "../../assets/all-images/Dee.jpeg";
+import ava05 from "../../assets/all-images/Richard.jpeg";
+import ava06 from "../../assets/all-images/John.jpeg";
 
 const OUR__MEMBERS = [
   {
@@ -46,6 +48,24 @@ const OUR__MEMBERS = [
     twitUrl: "#",
     linkedinUrl: "#",
     imgUrl: ava04,
+  },
+  {
+    name: "Richard Ouma",
+    experience: "5 years of experience",
+    fbUrl: "#",
+    instUrl: "#",
+    twitUrl: "#",
+    linkedinUrl: "#",
+    imgUrl: ava05,
+  },
+  {
+    name: "John Nganga",
+    experience: "5 years of experience",
+    fbUrl: "#",
+    instUrl: "#",
+    twitUrl: "#",
+    linkedinUrl: "#",
+    imgUrl: ava06,
   },
 ];
 
