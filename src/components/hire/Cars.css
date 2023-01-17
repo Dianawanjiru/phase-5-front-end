@@ -63,6 +63,11 @@ BarLoader{
     border-radius: 0px 4px 4px 0px;
 }
 
+.car-button a{
+  text-decoration: none;
+  color: #000;
+}
+
 
 
 /* Media Queries */
