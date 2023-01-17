@@ -35,7 +35,7 @@ function SignUpForm({onLogin}) {
         }).then((r) => {
           setIsLoading(false);
           if (r.ok) {
-           r.json().then((user) => onLogin(user));
+          r.json().then((user) => onLogin(user));
           } else {
             r.json().then((err) => setErrors(err.errors));
           }
@@ -43,56 +43,40 @@ function SignUpForm({onLogin}) {
       
       }
       return ( 
-    
-      <div> 
+            
+      <div>
         <div className='login-card'style ={{margin: "70px auto 0"}}>
-    <h3 className='header'><img src={image} style={{width: "35px", height: "25px"}} />RANITE</h3>
-          <div>
-            <form  onSubmit={handleSubmit} method="post">
+        <h3 className='header'><img src={image} style={{width: "35px", height: "25px"}} />RANITE</h3>
+        <div>
+          <form  onSubmit={handleSubmit} method="post">
             <div className='form-group'>
-               <input type="text" placeholder='Full Name' onChange={(e) => setName(e.target.value)} value={name} id='name' required className='form-control' />
-              </div>
-              <br/>
-              <div className='form-group'>
-          
+              <input type="text" placeholder='Full Name' onChange={(e) => setName(e.target.value)} value={name} id='name' required className='form-control' />
+            </div><br/>
+            <div className='form-group'>
               <input type="text" placeholder='Enter Username' onChange={(e) => setUsername(e.target.value)} value={username} id='username' required className='form-control' />
-              </div>
-              <br/>
-                <div className='form-group'>
-              
-                <input   type="email" placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
-                </div> 
-                <br/>
-                <div>
-              
-                <input   type="password" placeholder='Enter Password' required name='password' onChange={(e) => setPassword(e.target.value)} value={password} className='form-control' />
-                </div> 
-                <br/>
-                <div>
-               
-                <input   type="password" placeholder='Confirm Paasword' onChange={(e) => setConfirmPassword(e.target.password_confirmation)} value={password_confirmation} id='confirmPassword' required className='form-control' />
-                </div>
-
-
-                <br/>
-                 <div className='signupBtn'>
-               <button id='btn' type='submit'> {isLoading ? "Loading..." : "SignUp"}</button>
-                </div> 
+            </div><br/>
+            <div className='form-group'>
+              <input   type="email" placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} value={email} required name='email' className='form-control' />
+            </div><br/>
+            <div>
+              <input   type="password" placeholder='Enter Password' required name='password' onChange={(e) => setPassword(e.target.value)} value={password} className='form-control' />
+            </div><br/>
+            <div>
+              <input   type="password" placeholder='Confirm Password' onChange={(e) => setConfirmPassword(e.target.password_confirmation)} value={password_confirmation} id='confirmPassword' required className='form-control' />
+            </div><br/>
+            <div className='signupBtn'>
+              <button id='btn' type='submit'> {isLoading ? "Loading..." : "SignUp"}</button>
+            </div> 
             </form> 
-                     {errors?.map((err) => (
-             <div className='erro-alert'key={err}>{err}</div>
+              {errors?.map((err) => (
+            <div className='erro-alert'key={err}>{err}</div>
             ))}
-    
-             {success?.map((msg) => (
-             <div className='success-alert'key={msg}>{msg}</div>
+            {success?.map((msg) => (
+            <div className='success-alert'key={msg}>{msg}</div>
             ))}
-               
-          </div>
-     
-          </div>
-              
-          </div>
-    
+            </div>
+          </div>       
+        </div>    
       );
     }
     
