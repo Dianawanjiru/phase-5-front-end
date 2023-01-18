@@ -20,7 +20,7 @@ function SignUpForm({onLogin}) {
         setErrors([]);
         setIsLoading(true);
     
-        fetch("/signup", {
+        fetch("https://homefitback-production-9d5d.up.railway.app/signup", {
           method: "POST",
           mode: "no-cors",
           headers: {
