@@ -2,7 +2,7 @@
 
 *{
 
-    background-color: #eeeee4;   
+    /* background-color: #eeeee4;    */
 
 }
 
@@ -12,7 +12,6 @@
     font-weight: 300;
     font-size: 1.45em;
     font-family: 'Faster One', cursive;;
-  
 }
 
 .header {
@@ -30,7 +29,7 @@
 #btn {
     border-radius: 4px;
     font-size: 18px;
-    padding: 4px 70px;
+    padding: 5px 30px;
     background-color: orange;
     border: none;
     color: black;
@@ -45,27 +44,26 @@ input{
     border: 2px solid blue;
 }
 
-
-
-
 .option {
     font-size: 15px;
 }
 
-
-  .link{
+.link{
     cursor: pointer;
     border:2px ;
     color: orange;
+    padding: 3px;
+    background-color: white;
+    border-radius: 2px;
  }
 
  .login-card{
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    max-width: 200px;
+    max-width: 400px;
     margin: 100px auto 0;
     position: relative;
-    width: 100%;
     padding: 25px;
+    border-radius: 8px;
  }
 
  #passwordReset{
