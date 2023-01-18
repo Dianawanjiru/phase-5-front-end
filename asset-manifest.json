@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/phase-5-front-end/static/css/main.f04ecf68.css",
-    "main.js": "/phase-5-front-end/static/js/main.7aa69079.js",
+    "main.js": "/phase-5-front-end/static/js/main.8f3bd609.js",
     "static/media/test1.jpg": "/phase-5-front-end/static/media/test1.a732572a1b387f1928c2.jpg",
     "static/media/third.jpg": "/phase-5-front-end/static/media/third.93cf6dafb66226c36d72.jpg",
     "static/media/test2.jpg": "/phase-5-front-end/static/media/test2.cb30e827a00cd74d559f.jpg",
@@ -39,10 +39,10 @@
     "static/media/map-pin.svg": "/phase-5-front-end/static/media/map-pin.8c41fcd32a64210260619a622335959e.svg",
     "static/media/facebook.svg": "/phase-5-front-end/static/media/facebook.54b6ed1796ae51e7991a86b99ceb8334.svg",
     "main.f04ecf68.css.map": "/phase-5-front-end/static/css/main.f04ecf68.css.map",
-    "main.7aa69079.js.map": "/phase-5-front-end/static/js/main.7aa69079.js.map"
+    "main.8f3bd609.js.map": "/phase-5-front-end/static/js/main.8f3bd609.js.map"
   },
   "entrypoints": [
     "static/css/main.f04ecf68.css",
-    "static/js/main.7aa69079.js"
+    "static/js/main.8f3bd609.js"
   ]
 }
