@@ -22,6 +22,7 @@ function SignUpForm({onLogin}) {
     
         fetch("/signup", {
           method: "POST",
+          mode: "no-cors",
           headers: {
             "Content-Type": "application/json",
           },

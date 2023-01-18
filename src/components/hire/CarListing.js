@@ -11,7 +11,7 @@ function CarListing(){
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
-        fetch('https://carstle-production.up.railway.app/cars')
+        fetch('/cars')
             .then(response => response.json())
             .then(response => {
                 setLoading(true)
