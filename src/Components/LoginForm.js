@@ -12,7 +12,7 @@ const LoginForm = ({onLogin}) =>{
       function handleSubmit(e) {
         e.preventDefault();
         setIsLoading(true);
-        fetch("/login", {
+        fetch("https://homefitback-production-9d5d.up.railway.app/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
