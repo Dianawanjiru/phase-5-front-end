@@ -6,6 +6,16 @@ import ReorderIcon from '@material-ui/icons/Reorder';
 
 function Navbar() {
   const [openLinks, setOpenLinks] = useState(false)
+  const [user, setUser] = useState()
+
+  function handleLogoutClick() {
+    fetch("/logout", { method: "DELETE" }).then((r) => {
+      if (r.ok) {
+        setUser(null);
+      }
+    });
+  }
+
 
   return (
     <div className='navbar'>
@@ -24,6 +34,11 @@ function Navbar() {
                                 <NavLink to='/services/appointment'>Appointment</NavLink>
                 </div>
               <NavLink to ='/contacts'>CONTACT</NavLink> 
+              <NavLink to ='/login'>
+                <button variant="outline" onClick={handleLogoutClick}>
+                  Logout
+                </button>
+              </NavLink> 
             </div>
         </div>
         <div className='rightSide'>

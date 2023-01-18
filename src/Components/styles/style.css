@@ -12,7 +12,6 @@
     font-weight: 300;
     font-size: 1.45em;
     font-family: 'Faster One', cursive;;
-  
 }
 
 .header {
@@ -45,15 +44,11 @@ input{
     border: 2px solid blue;
 }
 
-
-
-
 .option {
     font-size: 15px;
 }
 
-
-  .link{
+.link{
     cursor: pointer;
     border:2px ;
     color: orange;
@@ -64,11 +59,11 @@ input{
 
  .login-card{
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    max-width: 200px;
+    max-width: 400px;
     margin: 100px auto 0;
     position: relative;
-    width: 100%;
     padding: 25px;
+    border-radius: 8px;
  }
 
  #passwordReset{
