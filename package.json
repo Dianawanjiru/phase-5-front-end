@@ -1,6 +1,5 @@
 {
   "name": "car-rental-project",
-  "homepage": "http://Dianawanjiru.github.io/phase-5-front-end",
   "proxy": "http://[::1]:3000",
   "version": "0.1.0",
   "private": true,

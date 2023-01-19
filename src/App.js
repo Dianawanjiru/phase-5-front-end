@@ -15,6 +15,11 @@ import Home from './Home /Home';
 import About from './Home /About';
 import Blog from './Home /Blog';
 import BlogDetails from './Home /BlogDetails';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "remixicon/fonts/remixicon.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -29,7 +34,7 @@ function App() {
   }, []);
 
 
-  if (!user) return <Login onLogin={setUser} />;
+  if (user) return <Login onLogin={setUser} />;
 
   return (
     <div className="App">
