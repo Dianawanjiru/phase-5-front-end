@@ -18,5 +18,5 @@ The capstone project was done for the purpose of learning and to grasp hands-on 
 
 
 ####
-- [Front-End](https://github.com/)https://sean-code.github.io/cars/)
+- [Front-End](https://sean-code.github.io/cars/)
 - [Back-End](https://carstle-production.up.railway.app/cars)
