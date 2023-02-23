@@ -11,7 +11,7 @@ function CarListing(){
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
-        fetch('https://carreview-production.up.railway.app/cars')
+        fetch('https://')
             .then(response => response.json())
             .then(response => {
                 setLoading(true)
